@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leer un código QR desde una imagen o con la cámara</title>
+<meta name="description" content="Sube una captura, pega una imagen o usa la cámara y te decimos qué contiene el código QR. Gratis, sin registro y sin subir nada a ningún servidor.">
+
+<link rel="canonical" href="https://qr.microtools.lat/leer-qr/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Leer un código QR desde una imagen o con la cámara">
+<meta property="og:description" content="Sube una captura, pega una imagen o usa la cámara y te decimos qué contiene el código QR. Gratis, sin registro y sin subir nada a ningún servidor.">
+<meta property="og:url" content="https://qr.microtools.lat/leer-qr/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" href="/css/app.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Leer un código QR desde una imagen o con la cámara","applicationCategory":"UtilitiesApplication","operatingSystem":"Cualquiera con navegador web","description":"Sube una captura, pega una imagen o usa la cámara y te decimos qué contiene el código QR. Gratis, sin registro y sin subir nada a ningún servidor.","offers":{"@type":"Offer","price":"0","priceCurrency":"PEN"},"url":"https://qr.microtools.lat/leer-qr/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se sube mi imagen a algún sitio?","acceptedAnswer":{"@type":"Answer","text":"No. La decodificación ocurre en tu navegador con JavaScript. Ni la imagen ni el contenido leído se envían a ningún servidor."}},{"@type":"Question","name":"¿Funciona con una foto hecha con el móvil?","acceptedAnswer":{"@type":"Answer","text":"Sí, siempre que el código salga entero, enfocado y razonablemente de frente. Si no se lee, repite la foto más cerca y con mejor luz."}},{"@type":"Question","name":"¿Puedo leer un QR de WiFi y ver la contraseña?","acceptedAnswer":{"@type":"Answer","text":"Sí. El código de WiFi guarda la contraseña en texto plano, así que al leerlo se ve. Eso es exactamente por lo que no conviene pegar el QR de tu red principal a la vista de todos."}},{"@type":"Question","name":"¿Es seguro abrir el enlace que sale?","acceptedAnswer":{"@type":"Answer","text":"El lector te enseña la dirección real antes de abrirla y te avisa de los patrones sospechosos habituales. La decisión sigue siendo tuya: desconfía de los códigos que piden pagar o iniciar sesión."}},{"@type":"Question","name":"¿Por qué me pide permiso de cámara?","acceptedAnswer":{"@type":"Answer","text":"Solo si pulsas el botón de cámara. El navegador exige tu permiso explícito y puedes denegarlo: subir una foto hace lo mismo."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://qr.microtools.lat/"},{"@type":"ListItem","position":2,"name":"leer qr","item":"https://qr.microtools.lat/leer-qr/"}]}</script>
+</head>
+<body>
+<header class="cabecera"><div class="contenedor cabecera__fila">
+  <a class="logo" href="/" data-pista="Volver al generador. Todas estas herramientas son parte de microtools, un conjunto de utilidades que funcionan sin registro."><span data-marca>microtools</span><span class="logo__sep" aria-hidden="true">/</span><span class="logo__app">QR</span></a>
+  <nav class="nav" aria-label="Principal">
+    <a href="/" data-pista="El generador completo: once tipos de contenido, estilos, logo y marco, y la descarga en 3D.">Generador</a>
+    <a href="/qr-whatsapp/" data-pista="Un código que abre un chat contigo con el mensaje ya escrito. La persona solo pulsa enviar.">WhatsApp</a>
+    <a href="/qr-wifi/" data-pista="El código de tu red: quien lo escanea se conecta sin teclear la contraseña.">WiFi</a>
+    <a href="/qr-3d/llavero/" data-pista="Tu código como pieza imprimible en 3D: llavero, imán, placa o tarjeta, en 3MF a dos colores.">3D</a>
+    <a href="/leer-qr/" aria-current="page" data-pista="Descifra un código con la cámara o desde una imagen, y te avisa si el enlace tiene pinta de fraude.">Leer un QR</a>
+    <a href="/qr-por-lotes/" data-pista="Un CSV entra y un ZIP sale, hasta 500 códigos de una vez. Para numerar mesas o locales.">Por lotes</a>
+  </nav>
+</div></header>
+
+<main>
+  <div class="contenedor">
+    <div class="entrada">
+      <h1>Leer un código QR</h1>
+      <p>Sube una imagen, pégala con Ctrl+V o apunta con la cámara: te decimos qué hay dentro del código y te avisamos si el enlace tiene mala pinta.</p>
+      <p>La imagen se procesa en tu navegador. No se sube a ningún servidor.</p>
+    </div>
+
+    <nav class="accesos" aria-label="Herramientas">
+      <a class="acceso" href="/" data-pista="El generador completo: once tipos de contenido, estilos, logo y marco, y la descarga en 3D."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1.2"/><rect x="14" y="3" width="7" height="7" rx="1.2"/><rect x="3" y="14" width="7" height="7" rx="1.2"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg><span>Generador</span></a>
+      <a class="acceso" href="/qr-whatsapp/" data-pista="Un código que abre un chat contigo con el mensaje ya escrito. La persona solo pulsa enviar."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.3A9 9 0 1 0 12 3Z"/><path d="M8.6 9.2c.3 2.6 2.6 4.9 5.2 5.2.6.1 1.2-.3 1.4-.9l.1-.5-1.8-.9-.8.8a6.3 6.3 0 0 1-2.6-2.6l.8-.8-.9-1.8-.5.1c-.6.2-1 .8-.9 1.4Z"/></svg><span>WhatsApp</span></a>
+      <a class="acceso" href="/qr-wifi/" data-pista="El código de tu red: quien lo escanea se conecta sin teclear la contraseña."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 8.5a15 15 0 0 1 19 0M5.5 12a10.5 10.5 0 0 1 13 0M8.5 15.5a6 6 0 0 1 7 0"/><path d="M12 19.5h0"/></svg><span>WiFi</span></a>
+      <a class="acceso" href="/qr-3d/llavero/" data-pista="Tu código como pieza imprimible en 3D: llavero, imán, placa o tarjeta, en 3MF a dos colores."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2.8 20.5 7v10L12 21.2 3.5 17V7Z"/><path d="M3.5 7 12 11.6 20.5 7M12 11.6v9.6"/></svg><span>3D</span></a>
+      <a class="acceso acceso--aqui" href="/leer-qr/" aria-current="page" data-pista="Descifra un código con la cámara o desde una imagen, y te avisa si el enlace tiene pinta de fraude."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8V5.5A2.5 2.5 0 0 1 5.5 3H8M16 3h2.5A2.5 2.5 0 0 1 21 5.5V8M21 16v2.5a2.5 2.5 0 0 1-2.5 2.5H16M8 21H5.5A2.5 2.5 0 0 1 3 18.5V16"/><path d="M3.5 12h17"/></svg><span>Leer un QR</span></a>
+      <a class="acceso" href="/qr-por-lotes/" data-pista="Un CSV entra y un ZIP sale, hasta 500 códigos de una vez. Para numerar mesas o locales."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M15 9v11"/></svg><span>Por lotes</span></a>
+    </nav>
+
+    <div class="ad-slot ad-slot--top" data-slot="top"></div>
+
+    <div id="herramienta"></div>
+
+    <p class="privacidad-nota"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="10" height="6.6" rx="1.4"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></svg><span>Todo ocurre en tu navegador: nada de lo que subas o escribas sale de tu dispositivo.</span></p>
+
+    <div class="ad-slot ad-slot--mid" data-slot="mid"></div>
+
+    <article class="articulo">
+      <h2>Por qué conviene leer un QR antes de abrirlo</h2>
+      <p>Un código QR es texto disfrazado de dibujo. No puedes saber a dónde te lleva hasta que lo escaneas, y ese es justo el hueco que aprovecha el fraude.</p>
+      <p>La estafa es sencilla: alguien pega una pegatina con su propio código encima del legítimo. El parquímetro, el cartel del restaurante, la factura de la luz. Tú apuntas, pagas, y el dinero va a otro sitio.</p>
+      <p>Leer el código aquí antes de abrirlo te enseña la dirección real, entera, sin abreviar. Es un paso de dos segundos que te ahorra el disgusto.</p>
+      <p>También sirve para lo aburrido y cotidiano: recuperar la contraseña del WiFi de un cartel que ya no tienes delante, sacar los datos de una tarjeta de visita, o ver qué guardaba un código que generaste hace meses.</p>
+      <p>Puedes darle la imagen de cuatro formas. Arrastrándola, pulsando para subirla, pegándola con Ctrl+V si acabas de hacer una captura, o usando la cámara.</p>
+      <p>Pegar la captura es lo más rápido en un ordenador. Windows guarda en el portapapeles lo que recortes con Win+Mayús+S; en Mac es Cmd+Mayús+4 manteniendo Control.</p>
+      <p>Si lo que tienes es un papel delante, usa la cámara: se lee sola en cuanto el código entra en el encuadre, no hay que pulsar ningún botón.</p>
+      <p>El permiso de cámara lo pide el navegador y puedes denegarlo sin perder nada: la opción de subir la foto hace exactamente lo mismo.</p>
+      <p>Cuando el código se lee, no te soltamos el texto crudo y ya está. Identificamos qué era y te lo mostramos ordenado: una red WiFi con su nombre y su contraseña, una ficha de contacto con sus campos, un evento con su fecha.</p>
+      <p>Debajo siempre puedes desplegar el contenido exacto, carácter por carácter, que es lo que necesitas si el código estaba mal formado y quieres entender por qué.</p>
+      <p>Los avisos de seguridad miran cuatro cosas. Si el enlace es de un acortador, porque entonces el destino real sigue oculto. Si el dominio usa caracteres no latinos codificados, la técnica clásica para imitar el nombre de un sitio conocido.</p>
+      <p>También si la dirección lleva usuario y contraseña incrustados antes del dominio, que es la forma más vieja de disfrazar a dónde va de verdad, y si la conexión no va cifrada.</p>
+      <p>Ninguno de esos avisos significa por sí solo que el código sea malicioso. Significan que mires dos veces antes de escribir una contraseña o un número de tarjeta.</p>
+      <p>La regla práctica que funciona: desconfía de cualquier QR que te pida pagar, iniciar sesión o instalar algo, sobre todo si estaba pegado en la calle o te llegó por mensaje.</p>
+      <p>Si el código es tuyo y quieres cambiarlo, el botón de editar lo abre en el generador con todos los datos ya puestos. Cambias lo que quieras y descargas el nuevo.</p>
+      <p>Eso también resuelve el caso de la pegatina que se ha despegado: lees el código viejo, lo editas si hace falta y lo imprimes otra vez, esta vez en 3D para que dure.</p>
+      <p>Si una imagen no se lee, casi siempre es por lo mismo: el código sale cortado, la foto está movida, o se hizo muy de lado. Vuelve a hacerla de frente y con el código entero dentro.</p>
+      <p>Los códigos impresos en superficies curvas o brillantes también dan guerra. Si puedes, apaga el flash y busca luz indirecta.</p>
+      <p>Nada de lo que subas sale de tu dispositivo: el decodificador es JavaScript que corre en tu navegador. Puedes desconectar internet después de cargar la página y seguirá leyendo códigos.</p>
+      <p>Y como no hay servidor, tampoco hay historial nuestro de lo que has leído.</p>
+    </article>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Se sube mi imagen a algún sitio?</summary><p>No. La decodificación ocurre en tu navegador con JavaScript. Ni la imagen ni el contenido leído se envían a ningún servidor.</p></details>
+      <details><summary>¿Funciona con una foto hecha con el móvil?</summary><p>Sí, siempre que el código salga entero, enfocado y razonablemente de frente. Si no se lee, repite la foto más cerca y con mejor luz.</p></details>
+      <details><summary>¿Puedo leer un QR de WiFi y ver la contraseña?</summary><p>Sí. El código de WiFi guarda la contraseña en texto plano, así que al leerlo se ve. Eso es exactamente por lo que no conviene pegar el QR de tu red principal a la vista de todos.</p></details>
+      <details><summary>¿Es seguro abrir el enlace que sale?</summary><p>El lector te enseña la dirección real antes de abrirla y te avisa de los patrones sospechosos habituales. La decisión sigue siendo tuya: desconfía de los códigos que piden pagar o iniciar sesión.</p></details>
+      <details><summary>¿Por qué me pide permiso de cámara?</summary><p>Solo si pulsas el botón de cámara. El navegador exige tu permiso explícito y puedes denegarlo: subir una foto hace lo mismo.</p></details>
+    </section>
+
+    <nav class="relacionados" aria-label="Herramientas relacionadas">
+      <h2>También te puede servir</h2>
+      <ul>
+        <li><a href="/">Generador de QR</a></li>
+        <li><a href="/qr-por-lotes/">Generar muchos a la vez</a></li>
+      </ul>
+    </nav>
+
+    <div class="ad-slot ad-slot--bottom" data-slot="bottom"></div>
+  </div>
+</main>
+
+<footer class="pie"><div class="contenedor">
+  <div class="pie__enlaces">
+    <a href="https://microtools.lat/" rel="noopener">Más herramientas</a>
+    <a href="/mis-qr/">Mis códigos</a>
+    <a href="/legal/aviso-legal/">Aviso legal</a>
+    <a href="/legal/privacidad/">Política de privacidad</a>
+    <a href="/legal/cookies/">Política de cookies</a>
+  </div>
+  <p>Todos los códigos se generan en tu navegador. Nada de lo que escribes se envía a ningún servidor.</p>
+  <p>&copy; 2026 <span data-marca>microtools</span></p>
+</div></footer>
+
+<script type="module">
+  import { init } from '/js/lector.js';
+  import { iniciarPublicidad } from '/js/ads.js';
+  import { aplicarMarca } from '/js/config.js';
+  import { iniciarPistas } from '/js/pistas.js';
+
+  aplicarMarca();
+  iniciarPistas();
+  init();
+  iniciarPublicidad();
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+  }
+</script>
+</body>
+</html>

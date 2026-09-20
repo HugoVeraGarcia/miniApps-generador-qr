@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generar muchos códigos QR a la vez desde un CSV</title>
+<meta name="description" content="Sube una lista y descarga un ZIP con todos los códigos en PNG y SVG, más las hojas A4 con marcas de corte. Hasta 500 de una tirada, gratis y sin registro.">
+
+<link rel="canonical" href="https://qr.microtools.lat/qr-por-lotes/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Generar muchos códigos QR a la vez desde un CSV">
+<meta property="og:description" content="Sube una lista y descarga un ZIP con todos los códigos en PNG y SVG, más las hojas A4 con marcas de corte. Hasta 500 de una tirada, gratis y sin registro.">
+<meta property="og:url" content="https://qr.microtools.lat/qr-por-lotes/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" href="/css/app.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Generar muchos códigos QR a la vez desde un CSV","applicationCategory":"UtilitiesApplication","operatingSystem":"Cualquiera con navegador web","description":"Sube una lista y descarga un ZIP con todos los códigos en PNG y SVG, más las hojas A4 con marcas de corte. Hasta 500 de una tirada, gratis y sin registro.","offers":{"@type":"Offer","price":"0","priceCurrency":"PEN"},"url":"https://qr.microtools.lat/qr-por-lotes/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuántos códigos puedo generar de una vez?","acceptedAnswer":{"@type":"Answer","text":"Hasta 500 por tanda. Si necesitas más, parte la lista en varios archivos."}},{"@type":"Question","name":"¿Qué formato tiene que tener el CSV?","acceptedAnswer":{"@type":"Answer","text":"Una columna llamada contenido y, opcionalmente, otra llamada etiqueta. El separador puede ser coma, punto y coma o tabulador: se detecta solo. Puedes descargar la plantilla desde la propia página."}},{"@type":"Question","name":"¿Puedo usar un color o un estilo distinto en cada código?","acceptedAnswer":{"@type":"Answer","text":"Sí. Añade columnas color y estilo a tu CSV y cada fila usará las suyas; las que estén vacías toman los valores generales."}},{"@type":"Question","name":"¿Las hojas A4 salen a tamaño real?","acceptedAnswer":{"@type":"Answer","text":"Sí, llevan medidas en milímetros. Imprímelas al 100% y desactiva la opción de ajustar a la página del diálogo de impresión."}},{"@type":"Question","name":"¿Se sube mi lista a algún servidor?","acceptedAnswer":{"@type":"Answer","text":"No. Los códigos y el ZIP se generan íntegramente en tu navegador."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://qr.microtools.lat/"},{"@type":"ListItem","position":2,"name":"qr por lotes","item":"https://qr.microtools.lat/qr-por-lotes/"}]}</script>
+</head>
+<body>
+<header class="cabecera"><div class="contenedor cabecera__fila">
+  <a class="logo" href="/" data-pista="Volver al generador. Todas estas herramientas son parte de microtools, un conjunto de utilidades que funcionan sin registro."><span data-marca>microtools</span><span class="logo__sep" aria-hidden="true">/</span><span class="logo__app">QR</span></a>
+  <nav class="nav" aria-label="Principal">
+    <a href="/" data-pista="El generador completo: once tipos de contenido, estilos, logo y marco, y la descarga en 3D.">Generador</a>
+    <a href="/qr-whatsapp/" data-pista="Un código que abre un chat contigo con el mensaje ya escrito. La persona solo pulsa enviar.">WhatsApp</a>
+    <a href="/qr-wifi/" data-pista="El código de tu red: quien lo escanea se conecta sin teclear la contraseña.">WiFi</a>
+    <a href="/qr-3d/llavero/" data-pista="Tu código como pieza imprimible en 3D: llavero, imán, placa o tarjeta, en 3MF a dos colores.">3D</a>
+    <a href="/leer-qr/" data-pista="Descifra un código con la cámara o desde una imagen, y te avisa si el enlace tiene pinta de fraude.">Leer un QR</a>
+    <a href="/qr-por-lotes/" aria-current="page" data-pista="Un CSV entra y un ZIP sale, hasta 500 códigos de una vez. Para numerar mesas o locales.">Por lotes</a>
+  </nav>
+</div></header>
+
+<main>
+  <div class="contenedor">
+    <div class="entrada">
+      <h1>Generar muchos códigos QR a la vez</h1>
+      <p>Pega tu lista o sube un CSV y descarga un ZIP con todos los códigos generados, numerados y listos para imprimir, con sus hojas A4 y marcas de corte.</p>
+      <p>Hasta 500 códigos por tanda, todo en tu navegador.</p>
+    </div>
+
+    <nav class="accesos" aria-label="Herramientas">
+      <a class="acceso" href="/" data-pista="El generador completo: once tipos de contenido, estilos, logo y marco, y la descarga en 3D."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1.2"/><rect x="14" y="3" width="7" height="7" rx="1.2"/><rect x="3" y="14" width="7" height="7" rx="1.2"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg><span>Generador</span></a>
+      <a class="acceso" href="/qr-whatsapp/" data-pista="Un código que abre un chat contigo con el mensaje ya escrito. La persona solo pulsa enviar."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.3A9 9 0 1 0 12 3Z"/><path d="M8.6 9.2c.3 2.6 2.6 4.9 5.2 5.2.6.1 1.2-.3 1.4-.9l.1-.5-1.8-.9-.8.8a6.3 6.3 0 0 1-2.6-2.6l.8-.8-.9-1.8-.5.1c-.6.2-1 .8-.9 1.4Z"/></svg><span>WhatsApp</span></a>
+      <a class="acceso" href="/qr-wifi/" data-pista="El código de tu red: quien lo escanea se conecta sin teclear la contraseña."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 8.5a15 15 0 0 1 19 0M5.5 12a10.5 10.5 0 0 1 13 0M8.5 15.5a6 6 0 0 1 7 0"/><path d="M12 19.5h0"/></svg><span>WiFi</span></a>
+      <a class="acceso" href="/qr-3d/llavero/" data-pista="Tu código como pieza imprimible en 3D: llavero, imán, placa o tarjeta, en 3MF a dos colores."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2.8 20.5 7v10L12 21.2 3.5 17V7Z"/><path d="M3.5 7 12 11.6 20.5 7M12 11.6v9.6"/></svg><span>3D</span></a>
+      <a class="acceso acceso--destacado" href="/leer-qr/" data-pista="Descifra un código con la cámara o desde una imagen, y te avisa si el enlace tiene pinta de fraude." data-pista-tono="acento"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8V5.5A2.5 2.5 0 0 1 5.5 3H8M16 3h2.5A2.5 2.5 0 0 1 21 5.5V8M21 16v2.5a2.5 2.5 0 0 1-2.5 2.5H16M8 21H5.5A2.5 2.5 0 0 1 3 18.5V16"/><path d="M3.5 12h17"/></svg><span>Leer un QR</span></a>
+      <a class="acceso acceso--aqui" href="/qr-por-lotes/" aria-current="page" data-pista="Un CSV entra y un ZIP sale, hasta 500 códigos de una vez. Para numerar mesas o locales."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M15 9v11"/></svg><span>Por lotes</span></a>
+    </nav>
+
+    <div class="ad-slot ad-slot--top" data-slot="top"></div>
+
+    <div id="herramienta"></div>
+
+    <p class="privacidad-nota"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="10" height="6.6" rx="1.4"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></svg><span>Todo ocurre en tu navegador: nada de lo que subas o escribas sale de tu dispositivo.</span></p>
+
+    <div class="ad-slot ad-slot--mid" data-slot="mid"></div>
+
+    <article class="articulo">
+      <h2>Cómo preparar la lista para que salga a la primera</h2>
+      <p>Si necesitas cuarenta códigos iguales salvo por un número, hacerlos de uno en uno es una tarde perdida. Esta herramienta convierte una lista en un ZIP con todo dentro.</p>
+      <p>El formato es un CSV, que es lo que exporta cualquier hoja de cálculo. Dos columnas bastan: contenido y etiqueta.</p>
+      <p>En contenido va lo que abrirá el código: un enlace, un texto, un identificador de inventario. En etiqueta va el nombre que quieres ver debajo del código en la hoja impresa, y que se usa además para nombrar el archivo.</p>
+      <p>Si exportas desde Excel en español, el separador será punto y coma en vez de coma. No pasa nada: se detecta solo, igual que el tabulador si pegas directamente desde una hoja de cálculo.</p>
+      <p>También puedes pegar las filas a mano en el recuadro. Y si no pones cabecera, se toma la primera columna como contenido y te avisamos.</p>
+      <p>El caso típico son las mesas de un local. Una fila por mesa, con el enlace de la carta y el número de mesa como etiqueta, y ya tienes los códigos numerados sin repetir trabajo.</p>
+      <p>El segundo caso es el inventario. Un código por activo con su identificador dentro, pegado en la máquina, y quien lo escanee ve la ficha del equipo.</p>
+      <p>El tercero son las acreditaciones de un evento: una fila por asistente, con su enlace personal.</p>
+      <p>Lo que descargas es un ZIP ordenado en carpetas: los PNG por un lado, los SVG por otro y las hojas A4 en la suya.</p>
+      <p>Los archivos van numerados con ceros a la izquierda para que el orden en el explorador sea el de tu lista y no el alfabético. Eso importa cuando tienes más de nueve.</p>
+      <p>Elige SVG si vas a llevarlo a imprenta o a rotular: es vectorial y se amplía a cualquier tamaño sin perder nitidez. El PNG sirve para pantalla y para impresión doméstica.</p>
+      <p>Las hojas A4 llevan medidas reales en milímetros y marcas de corte en las esquinas de cada celda. Imprímelas al 100%, sin la opción de ajustar a la página, o las medidas dejarán de cuadrar.</p>
+      <p>Puedes poner 1, 2, 4, 6, 12 o 24 códigos por hoja. Para mesas de restaurante, seis por hoja da un tamaño cómodo; 24 es para etiquetas pequeñas de inventario.</p>
+      <p>Si tu lista tiene más códigos de los que caben en una hoja, se generan las hojas que hagan falta y todas van dentro del ZIP.</p>
+      <p>El nivel de corrección de errores viene en Q porque estos códigos casi siempre acaban impresos y pegados en sitios que se rozan y se manchan. Con Q el código sigue leyéndose con una esquina estropeada.</p>
+      <p>Si alguna fila trae un contenido demasiado largo para caber en un código, esa fila se salta y aparece en un archivo de errores dentro del ZIP, con el número de fila y el motivo. El resto se genera igual.</p>
+      <p>El límite son 500 filas por tanda. No es una limitación técnica arbitraria: con más, el navegador empieza a sufrir y el ZIP se vuelve incómodo de manejar. Parte la lista si necesitas más.</p>
+      <p>Todo el trabajo ocurre en tu navegador. Con 500 filas puede tardar medio minuto, y la barra de progreso avanza de verdad: si se para, es que algo falló, no que se haya colgado.</p>
+      <p>Nada de lo que pegues se envía a ningún servidor, lo cual importa cuando la lista lleva nombres de clientes o identificadores internos.</p>
+      <p>Antes de mandar la tanda entera a imprenta, imprime una hoja en casa al tamaño real y escanea dos o tres códigos con un teléfono cualquiera.</p>
+    </article>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Cuántos códigos puedo generar de una vez?</summary><p>Hasta 500 por tanda. Si necesitas más, parte la lista en varios archivos.</p></details>
+      <details><summary>¿Qué formato tiene que tener el CSV?</summary><p>Una columna llamada contenido y, opcionalmente, otra llamada etiqueta. El separador puede ser coma, punto y coma o tabulador: se detecta solo. Puedes descargar la plantilla desde la propia página.</p></details>
+      <details><summary>¿Puedo usar un color o un estilo distinto en cada código?</summary><p>Sí. Añade columnas color y estilo a tu CSV y cada fila usará las suyas; las que estén vacías toman los valores generales.</p></details>
+      <details><summary>¿Las hojas A4 salen a tamaño real?</summary><p>Sí, llevan medidas en milímetros. Imprímelas al 100% y desactiva la opción de ajustar a la página del diálogo de impresión.</p></details>
+      <details><summary>¿Se sube mi lista a algún servidor?</summary><p>No. Los códigos y el ZIP se generan íntegramente en tu navegador.</p></details>
+    </section>
+
+    <nav class="relacionados" aria-label="Herramientas relacionadas">
+      <h2>También te puede servir</h2>
+      <ul>
+        <li><a href="/">Generador de QR</a></li>
+        <li><a href="/leer-qr/">Leer un QR</a></li>
+      </ul>
+    </nav>
+
+    <div class="ad-slot ad-slot--bottom" data-slot="bottom"></div>
+  </div>
+</main>
+
+<footer class="pie"><div class="contenedor">
+  <div class="pie__enlaces">
+    <a href="https://microtools.lat/" rel="noopener">Más herramientas</a>
+    <a href="/mis-qr/">Mis códigos</a>
+    <a href="/legal/aviso-legal/">Aviso legal</a>
+    <a href="/legal/privacidad/">Política de privacidad</a>
+    <a href="/legal/cookies/">Política de cookies</a>
+  </div>
+  <p>Todos los códigos se generan en tu navegador. Nada de lo que escribes se envía a ningún servidor.</p>
+  <p>&copy; 2026 <span data-marca>microtools</span></p>
+</div></footer>
+
+<script type="module">
+  import { init } from '/js/lotes.js';
+  import { iniciarPublicidad } from '/js/ads.js';
+  import { aplicarMarca } from '/js/config.js';
+  import { iniciarPistas } from '/js/pistas.js';
+
+  aplicarMarca();
+  iniciarPistas();
+  init();
+  iniciarPublicidad();
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+  }
+</script>
+</body>
+</html>

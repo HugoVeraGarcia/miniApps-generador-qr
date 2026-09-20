@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR de ubicación: que lleguen a tu dirección sin preguntar</title>
+<meta name="description" content="Crea el código QR que abre tu ubicación en el mapa del teléfono. Con coordenadas o con dirección, y por qué las coordenadas fallan menos de lo que crees.">
+<link rel="canonical" href="https://qr.microtools.lat/qr-ubicacion/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="QR de ubicación: que lleguen a tu dirección sin preguntar">
+<meta property="og:description" content="Crea el código QR que abre tu ubicación en el mapa del teléfono. Con coordenadas o con dirección, y por qué las coordenadas fallan menos de lo que crees.">
+<meta property="og:url" content="https://qr.microtools.lat/qr-ubicacion/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" href="/css/app.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"QR de ubicación: que lleguen a tu dirección sin preguntar","applicationCategory":"UtilitiesApplication","operatingSystem":"Cualquiera con navegador web","description":"Crea el código QR que abre tu ubicación en el mapa del teléfono. Con coordenadas o con dirección, y por qué las coordenadas fallan menos de lo que crees.","offers":{"@type":"Offer","price":"0","priceCurrency":"PEN"},"url":"https://qr.microtools.lat/qr-ubicacion/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Abre Google Maps o Apple Maps?","acceptedAnswer":{"@type":"Answer","text":"La que la persona use por defecto: el código usa el formato estándar geo, así que en Android suele abrir Google Maps y en iPhone, Apple Maps. Si quieres forzar Google Maps, usa el tipo enlace con la dirección web de tu ubicación."}},{"@type":"Question","name":"¿Cómo obtengo mis coordenadas?","acceptedAnswer":{"@type":"Answer","text":"Abre el mapa en el teléfono, mantén pulsado el punto exacto y aparecerán la latitud y la longitud. Cópialas tal cual."}},{"@type":"Question","name":"¿Es mejor la dirección o las coordenadas?","acceptedAnswer":{"@type":"Answer","text":"Las coordenadas, si el sitio es difícil de encontrar o si la entrada no coincide con lo que el mapa marca. La dirección escrita es más cómoda, pero el mapa tiene que interpretarla y a veces se equivoca."}},{"@type":"Question","name":"¿Sirve para un cartel a la intemperie?","acceptedAnswer":{"@type":"Answer","text":"En papel, poco: el sol y la lluvia lo acaban en semanas. Exporta el código como pieza 3D y una placa de pared en dos colores durará años sin descolorarse."}},{"@type":"Question","name":"¿Funciona sin conexión?","acceptedAnswer":{"@type":"Answer","text":"El código se lee sin conexión, pero para dibujar el mapa y trazar la ruta el teléfono necesita datos, salvo que tenga esa zona descargada."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://qr.microtools.lat/"},{"@type":"ListItem","position":2,"name":"qr ubicacion","item":"https://qr.microtools.lat/qr-ubicacion/"}]}</script>
+</head>
+<body>
+<header class="cabecera"><div class="contenedor cabecera__fila">
+  <a class="logo" href="/" data-pista="Volver al generador. Todas estas herramientas son parte de microtools, un conjunto de utilidades que funcionan sin registro."><span data-marca>microtools</span><span class="logo__sep" aria-hidden="true">/</span><span class="logo__app">QR</span></a>
+  <nav class="nav" aria-label="Principal">
+    <a href="/" data-pista="El generador completo: once tipos de contenido, estilos, logo y marco, y la descarga en 3D.">Generador</a>
+    <a href="/qr-whatsapp/" data-pista="Un código que abre un chat contigo con el mensaje ya escrito. La persona solo pulsa enviar.">WhatsApp</a>
+    <a href="/qr-wifi/" data-pista="El código de tu red: quien lo escanea se conecta sin teclear la contraseña.">WiFi</a>
+    <a href="/qr-3d/llavero/" data-pista="Tu código como pieza imprimible en 3D: llavero, imán, placa o tarjeta, en 3MF a dos colores.">3D</a>
+    <a href="/leer-qr/" data-pista="Descifra un código con la cámara o desde una imagen, y te avisa si el enlace tiene pinta de fraude.">Leer un QR</a>
+    <a href="/qr-por-lotes/" data-pista="Un CSV entra y un ZIP sale, hasta 500 códigos de una vez. Para numerar mesas o locales.">Por lotes</a>
+  </nav>
+</div></header>
+
+<main>
+  <div class="contenedor">
+    <div class="entrada">
+      <h1>Generador de QR de ubicación</h1>
+      <p>Un código que abre tu ubicación en el mapa del teléfono, listo para trazar la ruta. Útil en una invitación, en un cartel de obra, en la firma de un correo o en la puerta de un local difícil de encontrar.</p>
+      <p>Puedes ponerlo por coordenadas o por dirección escrita. No dan el mismo resultado, y la diferencia importa más en las zonas donde la numeración es irregular.</p>
+    </div>
+
+    <nav class="accesos" aria-label="Herramientas">
+      <a class="acceso" href="/" data-pista="El generador completo: once tipos de contenido, estilos, logo y marco, y la descarga en 3D."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1.2"/><rect x="14" y="3" width="7" height="7" rx="1.2"/><rect x="3" y="14" width="7" height="7" rx="1.2"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg><span>Generador</span></a>
+      <a class="acceso" href="/qr-whatsapp/" data-pista="Un código que abre un chat contigo con el mensaje ya escrito. La persona solo pulsa enviar."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.3A9 9 0 1 0 12 3Z"/><path d="M8.6 9.2c.3 2.6 2.6 4.9 5.2 5.2.6.1 1.2-.3 1.4-.9l.1-.5-1.8-.9-.8.8a6.3 6.3 0 0 1-2.6-2.6l.8-.8-.9-1.8-.5.1c-.6.2-1 .8-.9 1.4Z"/></svg><span>WhatsApp</span></a>
+      <a class="acceso" href="/qr-wifi/" data-pista="El código de tu red: quien lo escanea se conecta sin teclear la contraseña."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 8.5a15 15 0 0 1 19 0M5.5 12a10.5 10.5 0 0 1 13 0M8.5 15.5a6 6 0 0 1 7 0"/><path d="M12 19.5h0"/></svg><span>WiFi</span></a>
+      <a class="acceso" href="/qr-3d/llavero/" data-pista="Tu código como pieza imprimible en 3D: llavero, imán, placa o tarjeta, en 3MF a dos colores."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2.8 20.5 7v10L12 21.2 3.5 17V7Z"/><path d="M3.5 7 12 11.6 20.5 7M12 11.6v9.6"/></svg><span>3D</span></a>
+      <a class="acceso acceso--destacado" href="/leer-qr/" data-pista="Descifra un código con la cámara o desde una imagen, y te avisa si el enlace tiene pinta de fraude." data-pista-tono="acento"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8V5.5A2.5 2.5 0 0 1 5.5 3H8M16 3h2.5A2.5 2.5 0 0 1 21 5.5V8M21 16v2.5a2.5 2.5 0 0 1-2.5 2.5H16M8 21H5.5A2.5 2.5 0 0 1 3 18.5V16"/><path d="M3.5 12h17"/></svg><span>Leer un QR</span></a>
+      <a class="acceso" href="/qr-por-lotes/" data-pista="Un CSV entra y un ZIP sale, hasta 500 códigos de una vez. Para numerar mesas o locales."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M15 9v11"/></svg><span>Por lotes</span></a>
+    </nav>
+
+
+    <div class="ad-slot ad-slot--top" data-slot="top"></div>
+
+    <div id="qr-app"></div>
+
+    <p class="privacidad-nota"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="10" height="6.6" rx="1.4"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></svg><span>Todo ocurre en tu navegador: ni el contenido ni el logo que subas salen de tu dispositivo.</span></p>
+
+    <div class="ad-slot ad-slot--mid" data-slot="mid"></div>
+
+
+    <article class="articulo">
+      <h2>Coordenadas o dirección: cuál elegir</h2>
+      <p>Con una dirección escrita, el mapa tiene que interpretarla. Normalmente acierta, pero en urbanizaciones nuevas, en calles con nombres repetidos o en zonas donde la numeración no es continua, deja a la persona a una cuadra o en el distrito equivocado.</p>
+      <p>Con coordenadas, el mapa va al punto exacto que le diste. No hay interpretación posible. Es la opción segura cuando el sitio es difícil de encontrar o cuando la entrada no está donde el mapa cree que está.</p>
+      <p>Conseguir tus coordenadas es sencillo: abre el mapa, mantén pulsado el punto exacto y aparecen dos números, la latitud y la longitud. Cópialos y pégalos aquí.</p>
+      <p>Ese gesto resuelve un problema muy común: la entrada real no coincide con el centro del edificio. Un almacén cuya puerta de carga está en la calle de atrás, un local dentro de una galería, una casa de campo a la que se llega por un desvío sin nombre.</p>
+      <p>Cuando pones coordenadas, conviene marcar el punto donde la persona tiene que detenerse, no el centro geométrico de la propiedad. Para un proveedor que llega en camión, la diferencia entre las dos cosas son veinte minutos de vueltas.</p>
+      <p>La dirección escrita tiene una ventaja que las coordenadas no: es legible para un humano. En un cartel, «Av. Larco 345» junto al código informa a quien no va a escanear. Lo mejor de los dos mundos es poner el código con coordenadas y el texto de la dirección al lado.</p>
+      <p>Este tipo de código usa un formato estándar llamado geo, que los dos sistemas entienden: en Android abre normalmente Google Maps y en iPhone, Apple Maps. Cada persona llega con la aplicación que ya usa, sin instalar nada.</p>
+      <p>Si te importa que todo el mundo abra Google Maps específicamente, hay otro camino: usar el tipo de código de enlace con la dirección web de tu ubicación en Maps. Es más largo y menos elegante, pero fuerza la aplicación.</p>
+      <p>Una aplicación que se olvida: la invitación. Un código en la tarjeta de una boda o un evento ahorra la conversación de «¿dónde queda?» repetida cuarenta veces, y evita que alguien llegue tarde por haber puesto mal el nombre del local.</p>
+      <p>Otra: la firma de correo de un negocio con atención presencial. Un código pequeño junto a la dirección convierte un dato que hay que copiar en un gesto de un segundo.</p>
+      <p>Y otra más, para quien tiene taller o depósito: el cartel en la puerta con la ubicación exacta de la entrada de carga. El repartidor que llega por primera vez y no encuentra la puerta es un problema que se resuelve con un código.</p>
+      <p>Sobre el soporte: si va a estar a la intemperie, el papel no aguanta. La lluvia, el sol y el viento acaban con un adhesivo en semanas. Este generador exporta el código como pieza 3D imprimible, y una placa de pared en dos colores resiste años a la intemperie.</p>
+      <p>El relieve además tiene una propiedad útil al aire libre: el contraste no depende de la tinta, sino de dos plásticos de colores distintos. No se descolora con el sol como un impreso.</p>
+      <p>Para carteles exteriores, calcula el tamaño por la distancia: el lado del código, aproximadamente la décima parte de la distancia desde la que se leerá. Un cartel en la fachada que se lee desde la acera de enfrente necesita ser bastante más grande de lo que la intuición sugiere.</p>
+      <p>Y la comprobación de siempre, que aquí tiene un paso extra: escanea el código y verifica que el punto que aparece en el mapa es el correcto, no solo que el código se lee. Un dígito mal copiado en la latitud te manda a otro distrito y el código funciona perfectamente.</p>
+    </article>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Abre Google Maps o Apple Maps?</summary><p>La que la persona use por defecto: el código usa el formato estándar geo, así que en Android suele abrir Google Maps y en iPhone, Apple Maps. Si quieres forzar Google Maps, usa el tipo enlace con la dirección web de tu ubicación.</p></details>
+      <details><summary>¿Cómo obtengo mis coordenadas?</summary><p>Abre el mapa en el teléfono, mantén pulsado el punto exacto y aparecerán la latitud y la longitud. Cópialas tal cual.</p></details>
+      <details><summary>¿Es mejor la dirección o las coordenadas?</summary><p>Las coordenadas, si el sitio es difícil de encontrar o si la entrada no coincide con lo que el mapa marca. La dirección escrita es más cómoda, pero el mapa tiene que interpretarla y a veces se equivoca.</p></details>
+      <details><summary>¿Sirve para un cartel a la intemperie?</summary><p>En papel, poco: el sol y la lluvia lo acaban en semanas. Exporta el código como pieza 3D y una placa de pared en dos colores durará años sin descolorarse.</p></details>
+      <details><summary>¿Funciona sin conexión?</summary><p>El código se lee sin conexión, pero para dibujar el mapa y trazar la ruta el teléfono necesita datos, salvo que tenga esa zona descargada.</p></details>
+    </section>
+
+    <nav class="relacionados" aria-label="Herramientas relacionadas">
+      <h2>También te puede servir</h2>
+      <ul>
+        <li><a href="/qr-menu-restaurante/">QR para la carta</a></li>
+        <li><a href="/qr-whatsapp/">QR de WhatsApp</a></li>
+        <li><a href="/">Generador de QR</a></li>
+      </ul>
+    </nav>
+
+    <section class="indice" aria-labelledby="todos-los-tipos">
+      <h2 id="todos-los-tipos">Todos los tipos de c&oacute;digo</h2>
+      <p>El mismo generador, con el formulario y los valores ya puestos para cada caso.</p>
+      <ul class="indice__lista">
+      <li><a href="/">generador de códigos QR</a></li>
+      <li><a href="/qr-wifi/">generador de QR para WiFi</a></li>
+      <li><a href="/qr-whatsapp/">crear QR de WhatsApp</a></li>
+      <li><a href="/qr-resenas-google/">QR para reseñas de Google</a></li>
+      <li><a href="/qr-tarjeta-de-contacto/">QR de tarjeta de contacto vCard</a></li>
+      <li><a href="/qr-menu-restaurante/">QR para carta de restaurante</a></li>
+      <li><a href="/qr-instagram/">QR de Instagram</a></li>
+    </ul>
+      <h3>Para imprimir en 3D</h3>
+      <ul class="indice__lista">
+      <li><a href="/qr-3d/llavero/">llavero con código QR para imprimir en 3D</a></li>
+      <li><a href="/qr-3d/iman/">imán de nevera con código QR para imprimir en 3D</a></li>
+      <li><a href="/qr-3d/placa/">placa de mesa con QR para imprimir en 3D</a></li>
+      <li><a href="/qr-3d/tarjeta/">tarjeta de visita 3D con código QR</a></li>
+    </ul>
+    </section>
+
+    <div class="ad-slot ad-slot--bottom" data-slot="bottom"></div>
+  </div>
+</main>
+
+<footer class="pie"><div class="contenedor">
+  <div class="pie__enlaces">
+    <a href="https://microtools.lat/" rel="noopener">Más herramientas</a>
+    <a href="/mis-qr/">Mis códigos</a>
+    <a href="/legal/aviso-legal/">Aviso legal</a>
+    <a href="/legal/privacidad/">Política de privacidad</a>
+    <a href="/legal/cookies/">Política de cookies</a>
+  </div>
+  <p>Todos los códigos se generan en tu navegador. Nada de lo que escribes se envía a ningún servidor.</p>
+  <p>&copy; 2026 <span data-marca>microtools</span></p>
+</div></footer>
+
+<script type="module">
+  import { QRApp } from '/js/qr-engine.js';
+  import { iniciarPublicidad } from '/js/ads.js';
+  import { aplicarMarca } from '/js/config.js';
+  import { iniciarPistas } from '/js/pistas.js';
+
+  aplicarMarca();
+  iniciarPistas();
+  QRApp.init({"tipo":"ubicacion","marco":true,"cta":"CÓMO LLEGAR","objeto3d":"placa-mesa"});
+  iniciarPublicidad();
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+  }
+</script>
+</body>
+</html>

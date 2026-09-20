@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR de contacto (vCard): se guarda en la agenda de un toque</title>
+<meta name="description" content="Crea el código QR que guarda tu nombre, teléfono, correo y empresa directamente en la agenda del teléfono. Formato vCard estándar, sin apps ni suscripción.">
+<link rel="canonical" href="https://qr.microtools.lat/qr-tarjeta-de-contacto/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="QR de contacto (vCard): se guarda en la agenda de un toque">
+<meta property="og:description" content="Crea el código QR que guarda tu nombre, teléfono, correo y empresa directamente en la agenda del teléfono. Formato vCard estándar, sin apps ni suscripción.">
+<meta property="og:url" content="https://qr.microtools.lat/qr-tarjeta-de-contacto/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" href="/css/app.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"QR de contacto (vCard): se guarda en la agenda de un toque","applicationCategory":"UtilitiesApplication","operatingSystem":"Cualquiera con navegador web","description":"Crea el código QR que guarda tu nombre, teléfono, correo y empresa directamente en la agenda del teléfono. Formato vCard estándar, sin apps ni suscripción.","offers":{"@type":"Offer","price":"0","priceCurrency":"PEN"},"url":"https://qr.microtools.lat/qr-tarjeta-de-contacto/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Necesita internet para funcionar?","acceptedAnswer":{"@type":"Answer","text":"No. Los datos están dentro del código, así que se lee y se guarda sin conexión. Es una de las ventajas sobre las tarjetas digitales que apuntan a una página web."}},{"@type":"Question","name":"¿Qué pasa si cambio de teléfono o de empresa?","acceptedAnswer":{"@type":"Answer","text":"Los códigos ya impresos siguen llevando los datos antiguos. Si cambias a menudo, pon en el código solo lo estable más tu web, y mantén el resto actualizado en la web."}},{"@type":"Question","name":"¿Cuántos datos puedo meter?","acceptedAnswer":{"@type":"Answer","text":"Técnicamente muchos, pero cada carácter agranda el código y afina los módulos. Con nombre, teléfono, correo, empresa y cargo el código sigue siendo cómodo de imprimir en pequeño."}},{"@type":"Question","name":"¿Funciona en iPhone y en Android?","acceptedAnswer":{"@type":"Answer","text":"En los dos. vCard es un formato estándar y las cámaras de ambos sistemas reconocen que el código es un contacto y ofrecen guardarlo."}},{"@type":"Question","name":"¿Qué tamaño mínimo le doy en una tarjeta?","acceptedAnswer":{"@type":"Answer","text":"Unos dos centímetros de lado con impresión de imprenta. Si imprimes en casa, dale algo más, porque la tinta se expande sobre el papel y los módulos se juntan."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://qr.microtools.lat/"},{"@type":"ListItem","position":2,"name":"qr tarjeta de contacto","item":"https://qr.microtools.lat/qr-tarjeta-de-contacto/"}]}</script>
+</head>
+<body>
+<header class="cabecera"><div class="contenedor cabecera__fila">
+  <a class="logo" href="/" data-pista="Volver al generador. Todas estas herramientas son parte de microtools, un conjunto de utilidades que funcionan sin registro."><span data-marca>microtools</span><span class="logo__sep" aria-hidden="true">/</span><span class="logo__app">QR</span></a>
+  <nav class="nav" aria-label="Principal">
+    <a href="/" data-pista="El generador completo: once tipos de contenido, estilos, logo y marco, y la descarga en 3D.">Generador</a>
+    <a href="/qr-whatsapp/" data-pista="Un código que abre un chat contigo con el mensaje ya escrito. La persona solo pulsa enviar.">WhatsApp</a>
+    <a href="/qr-wifi/" data-pista="El código de tu red: quien lo escanea se conecta sin teclear la contraseña.">WiFi</a>
+    <a href="/qr-3d/llavero/" data-pista="Tu código como pieza imprimible en 3D: llavero, imán, placa o tarjeta, en 3MF a dos colores.">3D</a>
+    <a href="/leer-qr/" data-pista="Descifra un código con la cámara o desde una imagen, y te avisa si el enlace tiene pinta de fraude.">Leer un QR</a>
+    <a href="/qr-por-lotes/" data-pista="Un CSV entra y un ZIP sale, hasta 500 códigos de una vez. Para numerar mesas o locales.">Por lotes</a>
+  </nav>
+</div></header>
+
+<main>
+  <div class="contenedor">
+    <div class="entrada">
+      <h1>Generador de QR de contacto para tarjetas</h1>
+      <p>Este código no lleva a ninguna página: guarda tus datos. Quien lo escanea ve la ficha de contacto y con un toque la tiene en su agenda, con tu nombre, tu teléfono, tu correo y tu cargo ya separados en sus campos.</p>
+      <p>Es el QR de una tarjeta de presentación bien hecha, y funciona sin conexión, porque los datos viajan dentro del propio código en lugar de estar alojados en algún servidor.</p>
+    </div>
+
+    <nav class="accesos" aria-label="Herramientas">
+      <a class="acceso" href="/" data-pista="El generador completo: once tipos de contenido, estilos, logo y marco, y la descarga en 3D."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1.2"/><rect x="14" y="3" width="7" height="7" rx="1.2"/><rect x="3" y="14" width="7" height="7" rx="1.2"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg><span>Generador</span></a>
+      <a class="acceso" href="/qr-whatsapp/" data-pista="Un código que abre un chat contigo con el mensaje ya escrito. La persona solo pulsa enviar."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.4-1.3A9 9 0 1 0 12 3Z"/><path d="M8.6 9.2c.3 2.6 2.6 4.9 5.2 5.2.6.1 1.2-.3 1.4-.9l.1-.5-1.8-.9-.8.8a6.3 6.3 0 0 1-2.6-2.6l.8-.8-.9-1.8-.5.1c-.6.2-1 .8-.9 1.4Z"/></svg><span>WhatsApp</span></a>
+      <a class="acceso" href="/qr-wifi/" data-pista="El código de tu red: quien lo escanea se conecta sin teclear la contraseña."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 8.5a15 15 0 0 1 19 0M5.5 12a10.5 10.5 0 0 1 13 0M8.5 15.5a6 6 0 0 1 7 0"/><path d="M12 19.5h0"/></svg><span>WiFi</span></a>
+      <a class="acceso" href="/qr-3d/llavero/" data-pista="Tu código como pieza imprimible en 3D: llavero, imán, placa o tarjeta, en 3MF a dos colores."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2.8 20.5 7v10L12 21.2 3.5 17V7Z"/><path d="M3.5 7 12 11.6 20.5 7M12 11.6v9.6"/></svg><span>3D</span></a>
+      <a class="acceso acceso--destacado" href="/leer-qr/" data-pista="Descifra un código con la cámara o desde una imagen, y te avisa si el enlace tiene pinta de fraude." data-pista-tono="acento"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8V5.5A2.5 2.5 0 0 1 5.5 3H8M16 3h2.5A2.5 2.5 0 0 1 21 5.5V8M21 16v2.5a2.5 2.5 0 0 1-2.5 2.5H16M8 21H5.5A2.5 2.5 0 0 1 3 18.5V16"/><path d="M3.5 12h17"/></svg><span>Leer un QR</span></a>
+      <a class="acceso" href="/qr-por-lotes/" data-pista="Un CSV entra y un ZIP sale, hasta 500 códigos de una vez. Para numerar mesas o locales."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M15 9v11"/></svg><span>Por lotes</span></a>
+    </nav>
+
+
+    <div class="ad-slot ad-slot--top" data-slot="top"></div>
+
+    <div id="qr-app"></div>
+
+    <p class="privacidad-nota"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="10" height="6.6" rx="1.4"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></svg><span>Todo ocurre en tu navegador: ni el contenido ni el logo que subas salen de tu dispositivo.</span></p>
+
+    <div class="ad-slot ad-slot--mid" data-slot="mid"></div>
+
+
+    <article class="articulo">
+      <h2>Qué es una vCard y cuántos datos caben</h2>
+      <p>vCard es un formato de ficha de contacto que existe desde los años noventa y que entienden Android, iOS, Outlook, Gmail y prácticamente cualquier agenda. El código QR simplemente contiene ese texto, con sus campos marcados.</p>
+      <p>La consecuencia práctica: no hace falta ninguna aplicación especial ni por tu parte ni por la de quien escanea. La cámara reconoce que es un contacto y ofrece guardarlo.</p>
+      <p>Y la otra consecuencia, más importante: no depende de nosotros ni de nadie. Los servicios de tarjeta digital por suscripción alojan tu ficha en su servidor y el QR apunta allí; si dejas de pagar o el servicio cierra, todas tus tarjetas impresas quedan muertas. Una vCard dentro del código no puede caducar.</p>
+      <p>El límite es la capacidad. Un código QR almacena una cantidad finita de caracteres, y cuanto más metes, más módulos necesita y más fino queda cada uno. Un código con demasiados datos impreso en pequeño deja de leerse.</p>
+      <p>El orden de prioridad que funciona: nombre, teléfono, correo, empresa y cargo. Con eso la ficha está completa para lo que sirve una tarjeta. La dirección postal completa, la web, el segundo teléfono y una nota de tres líneas son lo que empieza a inflar el código.</p>
+      <p>Si necesitas meterlo todo, hay dos salidas. Una, imprimir más grande. Dos, poner en el código solo lo esencial más tu web, y que en la web esté el resto.</p>
+      <p>Cuidado con los caracteres poco habituales. Las tildes y la eñe se codifican bien, pero ocupan más espacio que una letra normal y algunas agendas antiguas las muestran mal. Si tu código va a viajar internacionalmente, conviene revisar cómo queda el nombre.</p>
+      <p>El nivel de corrección de errores merece una mención. Un QR puede reconstruirse aunque una parte esté dañada, y hay cuatro niveles de esa tolerancia. Para una tarjeta que va a vivir en carteras y bolsillos, un nivel alto compensa el tamaño extra: el código sigue leyéndose con un doblez o un roce.</p>
+      <p>Sobre el diseño de la tarjeta: el código al dorso, no al frente. El frente es para tu nombre y lo que haces; el QR es la acción, y va donde la persona lo busca cuando ya decidió guardarte.</p>
+      <p>Deja respirar el código. El margen blanco alrededor es parte del estándar, y una tarjeta donde el QR llega hasta el filo del papel es una tarjeta cuyo código falla la mitad de las veces.</p>
+      <p>El tamaño mínimo razonable en una tarjeta de visita estándar es de unos dos centímetros de lado. Por debajo de eso, con una impresión doméstica, los módulos se juntan y la lectura se vuelve cuestión de suerte.</p>
+      <p>Una prueba que ahorra dinero: imprime una sola tarjeta en la impresora que vayas a usar, no en pantalla, y escanéala con dos teléfonos distintos. La impresión es donde se pierde la nitidez, y eso no se ve en el archivo.</p>
+      <p>Hay una variante que vale la pena considerar: la tarjeta 3D. El generador exporta tu código como una pieza imprimible en dos colores, del tamaño de una tarjeta de visita. Es un objeto que la gente no tira, y ese es el problema real de las tarjetas de papel.</p>
+      <p>Para un equipo, la generación por lotes resuelve el trabajo: una hoja de cálculo con una fila por persona y salen todos los códigos de golpe, cada uno con su nombre de archivo, listos para pasar a la imprenta.</p>
+      <p>Un detalle final de privacidad que conviene tener claro: los datos que escribes aquí no salen de tu navegador. El código se construye en tu propio equipo, así que puedes poner tu teléfono personal sin que pase por ningún servidor nuestro.</p>
+    </article>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Necesita internet para funcionar?</summary><p>No. Los datos están dentro del código, así que se lee y se guarda sin conexión. Es una de las ventajas sobre las tarjetas digitales que apuntan a una página web.</p></details>
+      <details><summary>¿Qué pasa si cambio de teléfono o de empresa?</summary><p>Los códigos ya impresos siguen llevando los datos antiguos. Si cambias a menudo, pon en el código solo lo estable más tu web, y mantén el resto actualizado en la web.</p></details>
+      <details><summary>¿Cuántos datos puedo meter?</summary><p>Técnicamente muchos, pero cada carácter agranda el código y afina los módulos. Con nombre, teléfono, correo, empresa y cargo el código sigue siendo cómodo de imprimir en pequeño.</p></details>
+      <details><summary>¿Funciona en iPhone y en Android?</summary><p>En los dos. vCard es un formato estándar y las cámaras de ambos sistemas reconocen que el código es un contacto y ofrecen guardarlo.</p></details>
+      <details><summary>¿Qué tamaño mínimo le doy en una tarjeta?</summary><p>Unos dos centímetros de lado con impresión de imprenta. Si imprimes en casa, dale algo más, porque la tinta se expande sobre el papel y los módulos se juntan.</p></details>
+    </section>
+
+    <nav class="relacionados" aria-label="Herramientas relacionadas">
+      <h2>También te puede servir</h2>
+      <ul>
+        <li><a href="/qr-3d/tarjeta/">Tarjeta de visita 3D con QR</a></li>
+        <li><a href="/qr-por-lotes/">Un código por persona del equipo</a></li>
+        <li><a href="/">Generador de QR</a></li>
+      </ul>
+    </nav>
+
+    <section class="indice" aria-labelledby="todos-los-tipos">
+      <h2 id="todos-los-tipos">Todos los tipos de c&oacute;digo</h2>
+      <p>El mismo generador, con el formulario y los valores ya puestos para cada caso.</p>
+      <ul class="indice__lista">
+      <li><a href="/">generador de códigos QR</a></li>
+      <li><a href="/qr-wifi/">generador de QR para WiFi</a></li>
+      <li><a href="/qr-whatsapp/">crear QR de WhatsApp</a></li>
+      <li><a href="/qr-resenas-google/">QR para reseñas de Google</a></li>
+      <li><a href="/qr-menu-restaurante/">QR para carta de restaurante</a></li>
+      <li><a href="/qr-instagram/">QR de Instagram</a></li>
+      <li><a href="/qr-ubicacion/">QR de ubicación para Google Maps</a></li>
+    </ul>
+      <h3>Para imprimir en 3D</h3>
+      <ul class="indice__lista">
+      <li><a href="/qr-3d/llavero/">llavero con código QR para imprimir en 3D</a></li>
+      <li><a href="/qr-3d/iman/">imán de nevera con código QR para imprimir en 3D</a></li>
+      <li><a href="/qr-3d/placa/">placa de mesa con QR para imprimir en 3D</a></li>
+      <li><a href="/qr-3d/tarjeta/">tarjeta de visita 3D con código QR</a></li>
+    </ul>
+    </section>
+
+    <div class="ad-slot ad-slot--bottom" data-slot="bottom"></div>
+  </div>
+</main>
+
+<footer class="pie"><div class="contenedor">
+  <div class="pie__enlaces">
+    <a href="https://microtools.lat/" rel="noopener">Más herramientas</a>
+    <a href="/mis-qr/">Mis códigos</a>
+    <a href="/legal/aviso-legal/">Aviso legal</a>
+    <a href="/legal/privacidad/">Política de privacidad</a>
+    <a href="/legal/cookies/">Política de cookies</a>
+  </div>
+  <p>Todos los códigos se generan en tu navegador. Nada de lo que escribes se envía a ningún servidor.</p>
+  <p>&copy; 2026 <span data-marca>microtools</span></p>
+</div></footer>
+
+<script type="module">
+  import { QRApp } from '/js/qr-engine.js';
+  import { iniciarPublicidad } from '/js/ads.js';
+  import { aplicarMarca } from '/js/config.js';
+  import { iniciarPistas } from '/js/pistas.js';
+
+  aplicarMarca();
+  iniciarPistas();
+  QRApp.init({"tipo":"vcard","ecl":"Q","objeto3d":"tarjeta-visita"});
+  iniciarPublicidad();
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+  }
+</script>
+</body>
+</html>

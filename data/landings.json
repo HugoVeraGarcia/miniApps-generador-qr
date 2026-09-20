@@ -1,0 +1,1057 @@
+{
+  "sitio": {
+    "idioma": "es",
+    "tituloSitio": "Generador de códigos QR",
+    "autor": "Generador QR 3D"
+  },
+  "landings": [
+    {
+      "ruta": "/",
+      "archivo": "index.html",
+      "keyword": "generador de códigos QR",
+      "metaTitulo": "Generador de códigos QR gratis, con descarga en 3D",
+      "metaDescripcion": "Crea códigos QR personalizados y descárgalos como PNG, SVG o como objeto 3D listo para imprimir. Sin registro y sin subir nada a ningún servidor.",
+      "h1": "Generador de códigos QR para imprimir en 2D y en 3D",
+      "entrada": [
+        "Pega tu enlace, dale tu estilo y descárgalo como imagen (PNG o SVG) o como archivo 3D en 3MF a dos colores, listo para imprimir en un soporte de mesa, un llavero o una placa de pared.",
+        "Todo se genera en tu navegador: lo que escribes no sale de tu dispositivo."
+      ],
+      "config": {
+        "tipo": "enlace",
+        "objeto3d": "placa-mesa"
+      },
+      "h2Blog": "Cómo elegir bien tu código QR antes de imprimirlo",
+      "blog": [
+        "Un código QR es una imagen que guarda texto. Lo que pongas dentro es lo que abrirá el teléfono de quien lo escanee: una web, tu WiFi, tu ficha de contacto o un mensaje de WhatsApp ya escrito.",
+        "Hay una decisión que conviene tomar antes de generarlo, porque después no tiene arreglo: un código estático apunta directamente a la dirección que escribiste. Si mañana cambias esa dirección, todo lo que hayas impreso deja de funcionar.",
+        "La forma de protegerte es sencilla: haz que el QR apunte a una dirección tuya que puedas redirigir, y no a la dirección final. Así el papel impreso sigue sirviendo aunque el destino cambie.",
+        "La segunda decisión es el tamaño. La regla práctica es que un código se lee bien hasta una distancia de diez veces su lado impreso. Un QR de 3 cm se lee a 30 cm, que es lo que hay entre la mesa y el móvil del cliente. Para un cartel que se mira a tres metros necesitas 30 cm de lado.",
+        "La tercera es la longitud del contenido. Cuantos más caracteres metas, más denso queda el patrón y más pequeño es cada cuadradito. Un enlace corto imprime mucho mejor que uno lleno de parámetros de seguimiento.",
+        "El nivel de corrección de errores decide cuánto daño aguanta el código antes de dejar de leerse. El nivel L ocupa menos pero no perdona una mancha; el nivel H reconstruye el contenido aunque falte casi un tercio del dibujo, y es obligatorio si pones un logo en el centro o si vas a imprimirlo en relieve.",
+        "El contraste es el error más repetido. Un código gris claro sobre fondo beige queda precioso en la pantalla del diseñador y no lo lee ningún teléfono en la mesa de un bar con poca luz. Aquí verás un aviso en cuanto el contraste baje del umbral seguro.",
+        "Tampoco inviertas los colores: el código debe ser más oscuro que el fondo. Muchos lectores antiguos no saben leer un QR claro sobre fondo oscuro.",
+        "Respeta el margen blanco alrededor. Esa zona silenciosa de cuatro módulos es la que le dice al lector dónde empieza el código; si la recortas para que quepa en el diseño, el escaneo falla.",
+        "Para imprimir, descarga el SVG y no el PNG. El SVG es vectorial: se amplía a cualquier tamaño sin que aparezcan bordes borrosos, y es el formato que te pedirá cualquier imprenta.",
+        "Si el código va en la mesa de un local, añade el marco con texto. Una instrucción como MENÚ o DÉJANOS TU RESEÑA multiplica los escaneos reales frente a un cuadrado a secas, porque la gente necesita saber qué va a pasar antes de apuntar con la cámara.",
+        "La versión 3D es la que convierte un papel plastificado en un objeto que dura. El archivo 3MF sale con la base y el código en dos objetos separados, cada uno con su color asignado, así que el laminador ya sabe qué imprimir de cada material.",
+        "Si tu impresora tiene un solo extrusor, no necesitas nada especial: aquí te decimos la altura exacta en la que insertar la pausa de cambio de filamento para que el código salga de otro color.",
+        "Antes de dejarte descargar comprobamos dos cosas. Primero que el contraste es suficiente. Y segundo, que el código que acabamos de dibujar se lee de verdad: lo volvemos a decodificar y, si no se lee, te decimos por qué.",
+        "Esa comprobación también corre sobre el modelo 3D, mirando la pieza desde arriba, que es como la verá la cámara. Ninguna herramienta del mercado hace esto y es justo donde fallan los QR impresos en relieve.",
+        "Nada de lo que escribas se envía a ningún sitio. El código, la imagen y el modelo 3D se generan dentro de tu navegador, así que puedes meter la contraseña del WiFi o el teléfono de tu negocio sin pensártelo.",
+        "Tampoco hace falta registrarse ni hay marca de agua. Lo que descargas es tuyo y puedes usarlo comercialmente.",
+        "Si vas a generar muchos códigos iguales salvo por un número, como las mesas de un restaurante, imprime la hoja A4 con varias copias y líneas de corte en lugar de ir uno a uno.",
+        "Y si dudas del resultado, haz siempre la misma prueba antes de mandar 500 copias a imprenta: imprime uno en casa, al tamaño real, y escanéalo con un teléfono viejo y con poca luz.",
+        "Si pasa esa prueba, pasa cualquiera."
+      ],
+      "faq": [
+        [
+          "¿Los códigos QR que genero caducan?",
+          "No. Un código estático guarda el contenido dentro del propio dibujo, así que funciona para siempre mientras la dirección a la que apunta siga activa. Aquí no hay cuentas ni suscripciones que puedan desactivarlo."
+        ],
+        [
+          "¿Puedo usarlos para mi negocio?",
+          "Sí, sin límites y sin atribución. No llevan marca de agua ni registro."
+        ],
+        [
+          "¿Qué tamaño debe tener el código impreso?",
+          "Multiplica por diez el lado del código para saber a qué distancia se lee. Para una mesa bastan 3 o 4 cm; para un escaparate que se mira desde la acera, 15 cm o más."
+        ],
+        [
+          "¿Por qué mi código no escanea?",
+          "Las causas habituales son cuatro: poco contraste entre el código y el fondo, un logo demasiado grande en el centro, margen blanco recortado o un tamaño de impresión demasiado pequeño para la distancia de lectura. El generador avisa de las cuatro."
+        ],
+        [
+          "¿Se sube algo a vuestros servidores?",
+          "No. Todo el procesamiento ocurre en tu navegador, incluido el logo que subas y el modelo 3D. No hay servidor que reciba nada."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/qr-wifi/",
+          "QR para el WiFi"
+        ],
+        [
+          "/qr-3d/llavero/",
+          "Llavero QR en 3D"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-wifi/",
+      "archivo": "qr-wifi/index.html",
+      "keyword": "generador de QR para WiFi",
+      "metaTitulo": "Generador de QR para WiFi: conecta sin escribir la contraseña",
+      "metaDescripcion": "Crea el código QR de tu red WiFi y descárgalo para imprimir. Tus invitados o clientes se conectan apuntando con la cámara. Gratis y sin registro.",
+      "h1": "Generador de código QR para WiFi",
+      "entrada": [
+        "Escribe el nombre de tu red y su contraseña y obtén un código QR que conecta al WiFi con solo apuntar la cámara. Ideal para un bar, un Airbnb o la sala de espera.",
+        "La contraseña se procesa en tu navegador y no se envía a ningún servidor."
+      ],
+      "config": {
+        "tipo": "wifi",
+        "marco": true,
+        "cta": "WIFI GRATIS",
+        "ecl": "Q",
+        "objeto3d": "placa-mesa"
+      },
+      "h2Blog": "Cómo funciona el QR del WiFi y dónde colocarlo",
+      "blog": [
+        "El código QR de WiFi no es un enlace: guarda un texto con un formato especial que el teléfono reconoce como una configuración de red. Al escanearlo, el móvil ofrece conectarse solo, sin que nadie tenga que teclear la contraseña.",
+        "Funciona de fábrica en Android desde hace años y en iPhone desde iOS 11. En ambos basta con la cámara normal: no hay que instalar ninguna aplicación.",
+        "Necesitas tres datos. El nombre exacto de la red, que es lo que aparece en la lista de redes disponibles. La contraseña. Y el tipo de seguridad, que casi siempre es WPA.",
+        "El nombre de la red distingue mayúsculas y minúsculas y respeta los espacios. Si tu red se llama Cafe Extra Grande y escribes cafe extra grande, el código no conectará con nada.",
+        "Si tu red no tiene contraseña, elige la opción de red abierta. Si la tienes oculta, marca la casilla correspondiente o el teléfono no la encontrará aunque el código sea correcto.",
+        "Un aviso importante: cualquiera que vea el código impreso puede conectarse a tu red. Eso es justo lo que quieres en la zona de clientes, pero no en la red por la que pasan tu caja registradora o tus ordenadores.",
+        "La recomendación práctica para un negocio es tener dos redes en el router: una de invitados para el código QR y otra privada para el trabajo. Casi todos los routers modernos permiten crear la red de invitados en dos clics.",
+        "En una casa o un apartamento turístico el problema es otro: los huéspedes escriben mal contraseñas largas y acaban llamándote. Un QR en la nevera o en la carpeta de bienvenida elimina ese mensaje de madrugada.",
+        "Para el tamaño, piensa en la distancia real. Un código de 4 cm pegado en la mesa se lee de sobra. Uno en la pared, detrás de la barra, necesita 10 cm o más.",
+        "Activa el marco con el texto WIFI GRATIS. El cliente no sabe que ese cuadrado es la contraseña del WiFi a menos que se lo digas, y esa etiqueta es la diferencia entre que lo use y que lo ignore.",
+        "Usa el nivel de corrección Q o H si el código va a estar en una mesa donde se derraman bebidas o en una pared que se roza. Con ese nivel el código sigue leyéndose aunque se manche una esquina.",
+        "Plastifica el papel o, mejor, imprime la placa en 3D. Un QR de WiFi es de las pocas cosas que se quedan puestas años, y el papel pegado con celo envejece muy mal.",
+        "La placa de mesa impresa en 3D aguanta la limpieza diaria, no se despega y transmite otra cosa. Se imprime en dos colores y se apoya sola con el soporte inclinado.",
+        "Si cambias la contraseña del WiFi tendrás que generar e imprimir el código otra vez. Es la razón principal para elegir una contraseña de invitados que no vayas a cambiar cada mes.",
+        "Comprueba siempre el resultado con un teléfono distinto al tuyo antes de imprimir varias copias. Tu móvil ya conoce la red y se conecta igualmente, así que no sirve para probar.",
+        "Una prueba fiable: pon el móvil en modo avión, desactívalo, olvida la red en los ajustes y entonces escanea.",
+        "Si el código no conecta pero sí se lee, el fallo casi siempre está en el nombre de la red o en el tipo de seguridad, no en el código.",
+        "Nada de lo que escribes aquí sale de tu navegador. Ni el nombre de la red ni la contraseña se envían a ningún servidor, porque no hay servidor: el código se genera con JavaScript en tu propio dispositivo.",
+        "Puedes comprobarlo desconectando internet después de cargar la página: el generador sigue funcionando.",
+        "Y como no hay cuenta ni suscripción detrás, el código que imprimas hoy seguirá funcionando dentro de diez años."
+      ],
+      "faq": [
+        [
+          "¿Funciona en iPhone?",
+          "Sí, desde iOS 11. Basta con abrir la cámara y apuntar; aparece un aviso para unirse a la red."
+        ],
+        [
+          "¿Es seguro poner la contraseña del WiFi en un QR?",
+          "Cualquiera que vea el código puede conectarse, igual que si le dijeras la contraseña en voz alta. Para un negocio, lo recomendable es generar el código sobre la red de invitados del router, nunca sobre la red principal."
+        ],
+        [
+          "¿Qué pongo si mi red no tiene contraseña?",
+          "Elige la opción de red abierta en el desplegable de seguridad y deja el campo de contraseña vacío."
+        ],
+        [
+          "¿Sirve para redes con portal de acceso?",
+          "No. Las redes que abren una página web para aceptar condiciones no se pueden configurar con este tipo de código, porque la conexión depende de ese paso posterior."
+        ],
+        [
+          "¿Puedo imprimirlo en 3D?",
+          "Sí. En el paso de descarga puedes generar una placa de mesa o una placa de pared en 3MF a dos colores, con el código en relieve."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/",
+          "Generador de QR"
+        ],
+        [
+          "/qr-3d/llavero/",
+          "Llavero QR en 3D"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-3d/llavero/",
+      "archivo": "qr-3d/llavero/index.html",
+      "keyword": "llavero con código QR para imprimir en 3D",
+      "metaTitulo": "Llavero con código QR para imprimir en 3D (3MF y STL)",
+      "metaDescripcion": "Genera un llavero con tu código QR en relieve y descárgalo en 3MF a dos colores, STL u OpenSCAD. Con validador de impresión y altura de cambio de filamento.",
+      "h1": "Llavero con código QR para imprimir en 3D",
+      "entrada": [
+        "Escribe lo que quieres que abra el código y descarga el llavero listo para el laminador: 3MF con los dos colores ya asignados, STL u OpenSCAD paramétrico.",
+        "Antes de dejarte descargar comprobamos que los módulos son lo bastante anchos para tu boquilla y que la pieza, vista desde arriba, se lee de verdad."
+      ],
+      "config": {
+        "tipo": "enlace",
+        "objeto3d": "llavero",
+        "ecl": "H"
+      },
+      "h2Blog": "Cómo imprimir un llavero QR que sí se escanee",
+      "blog": [
+        "Un QR impreso en 3D no falla por el modelo, falla por la física de la impresora. El lector necesita ver cuadrados oscuros bien definidos sobre un fondo claro, y una boquilla de 0,4 mm no dibuja un cuadrado de 0,5 mm con bordes limpios.",
+        "La regla que hay que respetar es que cada módulo del código mida al menos dos veces el diámetro de la boquilla. Con una boquilla de 0,4 mm eso son 0,8 mm por módulo como mínimo absoluto.",
+        "De ahí sale el tamaño del llavero. Un enlace corto genera un código de 33 por 33 módulos, que en un llavero de 50 mm deja módulos de 1,3 mm: sobra. Un enlace largo puede generar 57 módulos, y entonces el mismo llavero da 0,75 mm y el código no se lee.",
+        "Por eso el validador de esta página no es decorativo. Calcula el ancho real de tu módulo y, si no llega, te dice exactamente cuántos milímetros necesita la pieza con ese contenido.",
+        "La solución casi siempre es acortar el enlace, no agrandar el llavero. Un acortador te ahorra veinte caracteres y con eso bajas dos versiones de código.",
+        "La altura del relieve importa menos de lo que parece, pero tiene un mínimo: tres capas. Con 0,2 mm de altura de capa son 0,6 mm. Por debajo de eso el color de la base se transparenta y el contraste se pierde.",
+        "Subir el relieve a 2 mm no mejora la lectura y sí empeora el acabado, porque las paredes verticales altas y estrechas se vuelven frágiles y acumulan hilos.",
+        "El contraste entre los dos colores es lo que decide si la cámara distingue el código. Negro sobre blanco es lo ideal. Negro sobre gris claro funciona. Azul marino sobre negro no lo va a leer nadie.",
+        "Usa filamento mate para la base si puedes. El brillo del PLA normal produce reflejos que confunden al lector, sobre todo bajo luz directa.",
+        "Si tu impresora tiene un solo extrusor no necesitas nada especial: se imprime en dos colores con una pausa. Aquí te damos la altura exacta en Z a la que insertar el cambio de filamento, calculada sobre tu altura de capa.",
+        "En PrusaSlicer y en Orca esa pausa se añade con el botón derecho sobre la barra de capas, en la altura que te indicamos. En Bambu Studio el comando es el mismo, M600.",
+        "El 3MF que descargas lleva la base y el código como dos objetos separados, cada uno con su color. Si tienes AMS o multimaterial, el laminador ya lo entiende sin que toques nada.",
+        "El modo pasante es la otra opción: en vez de relieve, los módulos son agujeros que atraviesan la pieza. Se imprime de un solo color y se lee a contraluz o contra una pared clara.",
+        "Ese modo tiene una trampa que rompe la mayoría de modelos que circulan por ahí: si un módulo claro queda rodeado de agujeros por los cuatro lados, ese trocito de material se cae al despegar la pieza. Aquí se detectan esos islotes y se añaden puentes automáticamente.",
+        "Imprime el llavero plano sobre la cama, con el código hacia arriba y sin soportes. No hace falta balsa ni falda si tu primera capa está bien calibrada.",
+        "Un relleno del 15 % basta de sobra. La pieza es fina y lo que la hace resistente son los perímetros, no el relleno: pon tres.",
+        "Antes de mandar a imprimir, usa el botón de comprobar que escanea. Renderiza la pieza desde arriba, tal como la verá la cámara, y la decodifica. Si el resultado no coincide con tu contenido, algo se ha roto en la geometría y te ahorras media hora de impresión.",
+        "Si quieres tocar las medidas, descarga el OpenSCAD: trae el ancho, el grosor, el borde y la altura del código como variables, y la matriz del QR ya calculada.",
+        "El archivo STL sirve para cualquier programa, pero pierde la información de color. Descárgalo solo si tu flujo de trabajo lo necesita.",
+        "Y si el llavero te queda bien, súbelo con una foto a tu plataforma de modelos favorita: es la mejor forma de que otro maker no tenga que repetir estas pruebas."
+      ],
+      "faq": [
+        [
+          "¿Qué tamaño mínimo necesita el llavero?",
+          "Depende de la longitud de tu contenido. El validador lo calcula al momento: con una boquilla de 0,4 mm cada módulo necesita 0,8 mm, así que un código de 33 módulos pide al menos 26 mm de zona de código más el borde."
+        ],
+        [
+          "¿Puedo imprimirlo con una sola boquilla?",
+          "Sí. El generador te da la altura exacta en Z para insertar la pausa de cambio de filamento (M600) y que el código salga en otro color."
+        ],
+        [
+          "¿Qué formato descargo?",
+          "El 3MF si vas a imprimir tal cual: llega con los dos colores asignados. El OpenSCAD si quieres cambiar medidas. El STL solo si tu programa no acepta 3MF."
+        ],
+        [
+          "¿Por qué mi QR impreso no escanea?",
+          "Las tres causas habituales son módulos por debajo de 0,8 mm, relieve de menos de tres capas y poco contraste entre los dos filamentos. El validador comprueba las tres antes de dejarte descargar."
+        ],
+        [
+          "¿Qué es el modo pasante?",
+          "Los módulos se convierten en agujeros que atraviesan la pieza, en lugar de sobresalir. Se imprime en un solo color y se lee a contraluz. Añadimos puentes automáticos para que ninguna parte del código se caiga."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/",
+          "Generador de QR"
+        ],
+        [
+          "/qr-wifi/",
+          "QR para el WiFi"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-whatsapp/",
+      "archivo": "qr-whatsapp/index.html",
+      "keyword": "crear QR de WhatsApp",
+      "metaTitulo": "Crear un QR de WhatsApp con mensaje ya escrito, gratis",
+      "metaDescripcion": "Genera el código QR de tu WhatsApp con el mensaje inicial ya puesto. Quien lo escanea abre el chat contigo y solo pulsa enviar. Sin registro y sin caducidad.",
+      "h1": "Generador de código QR para WhatsApp",
+      "entrada": [
+        "Pon tu número con el código de país y, si quieres, el mensaje con el que quieres que te escriban. El código que sale abre el chat directamente, con el texto ya escrito: la persona solo pulsa enviar.",
+        "Es el QR que más sentido tiene pegado en un mostrador, en una vitrina o en el reverso de un volante, porque convierte a quien pasa por delante en una conversación abierta sin que tenga que guardar tu número."
+      ],
+      "config": {
+        "tipo": "whatsapp",
+        "marco": true,
+        "cta": "ESCRÍBENOS",
+        "objeto3d": "placa-mesa"
+      },
+      "h2Blog": "El mensaje previo es lo que decide si te escriben",
+      "blog": [
+        "Un QR de WhatsApp no guarda tu número tal cual: guarda un enlace a wa.me con tu número y, opcionalmente, un texto codificado. Por eso funciona igual en Android y en iPhone, y por eso no necesita que la otra persona te añada a sus contactos.",
+        "El número va siempre con el código de país y sin ningún otro símbolo. Para Perú, un 51 delante de los nueve dígitos. Sin espacios, sin guiones, sin el signo más: el generador se encarga de limpiarlo, pero conviene saber qué está pasando por si el resultado no abre.",
+        "El campo del mensaje es la parte que la mayoría deja vacía, y es la que más cambia los resultados. Un chat que se abre en blanco obliga a la persona a inventar cómo empezar, y ese segundo de duda es donde se pierde la conversación.",
+        "Comparemos dos casos reales. Un cartel en una ferretería con el chat en blanco recibe mensajes del tipo «hola». El mismo cartel con el mensaje «Hola, quiero consultar por un producto que vi en la tienda» recibe mensajes que ya dicen para qué escriben, y se responden en una frase.",
+        "El truco está en escribir el mensaje desde el punto de vista del cliente, no del negocio. «Quiero cotizar» funciona; «Estimados, solicito información» no lo escribiría nadie por su cuenta.",
+        "Si tienes varios puntos de venta o varios carteles, cambia el mensaje en cada uno. «Hola, escribo desde el local de Miraflores» te dice de dónde vino el contacto sin que tengas que preguntar, y sin necesidad de herramientas de seguimiento.",
+        "Lo mismo sirve para medir qué soporte funciona. Un mensaje distinto en el volante, en la vitrina y en la boleta te da tres canales identificables en tu propio chat, y es la forma más barata que existe de saber qué publicidad te trae gente.",
+        "El mensaje no debe ser largo. Una línea que la persona pueda leer de un vistazo y enviar sin corregir. Si tiene que borrar la mitad porque no encaja con su caso, vuelves al problema del chat en blanco.",
+        "Sobre el aspecto: este tipo de código es uno de los pocos donde el marco con texto se justifica de verdad. Un cuadrado negro solo no dice a dónde lleva, y la gente ha aprendido a desconfiar de los QR sin etiqueta. «Escríbenos» debajo del código resuelve eso.",
+        "El logo de WhatsApp en el centro es tentador y conviene pensarlo dos veces. Es una marca registrada de Meta, y usarla en material propio tiene condiciones. Un icono genérico de conversación o el logo de tu propio negocio hacen el mismo trabajo sin ese riesgo.",
+        "El tamaño mínimo depende de la distancia de lectura. La regla práctica: el lado del código debe medir aproximadamente la décima parte de la distancia desde la que se va a escanear. Para un mostrador, a medio metro, cinco centímetros bastan. Para una vitrina que se lee desde la acera, a tres metros, necesitas treinta.",
+        "Una consideración que casi nadie tiene en cuenta: si el número cambia, el código impreso deja de servir. No es un defecto de este generador, es la naturaleza de un QR estático, y es también lo que garantiza que el código siga funcionando dentro de diez años sin depender de que un servicio intermediario siga existiendo.",
+        "Si prevés cambiar de número, la solución no es un QR «dinámico» de pago, es apuntar el código a una página tuya que redirija a WhatsApp. Cambias la página y todos los códigos impresos siguen valiendo.",
+        "Para un negocio con atención en horarios limitados, conviene que el mensaje previo lo diga: «Hola, quiero consultar por delivery (atienden de 11 a 22 h)». Evita la frustración de escribir a las dos de la mañana y no recibir respuesta.",
+        "Antes de mandar nada a imprenta, escanea el código desde la pantalla con dos teléfonos distintos, uno Android y uno iPhone, y comprueba que abre el chat correcto con el texto correcto. El botón de comprobación de esta página hace la verificación técnica, pero la prueba en un teléfono real es la que cuenta.",
+        "Y si vas a imprimir en cantidad, pídele a la imprenta una prueba en el papel definitivo. Un código impreso en papel brillante bajo una luz directa refleja, y un reflejo en el sitio equivocado lo vuelve ilegible aunque el archivo esté perfecto."
+      ],
+      "faq": [
+        [
+          "¿Hace falta tener WhatsApp Business?",
+          "No. El código funciona igual con una cuenta personal. WhatsApp Business añade cosas útiles para un negocio —catálogo, respuestas rápidas, horario— pero el QR no depende de ellas."
+        ],
+        [
+          "¿Cómo escribo el número de Perú?",
+          "Con el 51 delante de los nueve dígitos, sin el signo más y sin espacios. Por ejemplo, 51987654321. Para otros países, el mismo criterio con su propio código."
+        ],
+        [
+          "¿La persona que escanea ve mi número?",
+          "Sí, igual que si le dictaras el número. El QR no lo oculta; solo evita que tenga que teclearlo."
+        ],
+        [
+          "¿Puedo cambiar el mensaje después de imprimir?",
+          "No: el mensaje va dentro del código. Si quieres poder cambiarlo, apunta el QR a una página tuya que haga la redirección a WhatsApp, y edita esa página."
+        ],
+        [
+          "¿Funciona si la persona no tiene WhatsApp instalado?",
+          "El enlace abre la web de WhatsApp en el navegador y le ofrece instalar la aplicación. No se queda en una pantalla de error."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/",
+          "Generador de QR"
+        ],
+        [
+          "/qr-resenas-google/",
+          "QR para reseñas de Google"
+        ],
+        [
+          "/qr-por-lotes/",
+          "Generar muchos códigos a la vez"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-resenas-google/",
+      "archivo": "qr-resenas-google/index.html",
+      "keyword": "QR para reseñas de Google",
+      "metaTitulo": "QR para reseñas de Google: el enlace correcto y cómo usarlo",
+      "metaDescripcion": "Crea el código QR que abre directamente la ventana de reseñas de tu negocio en Google. Con el enlace correcto, no el de tu ficha, y cuándo pedirla.",
+      "h1": "Generador de QR para reseñas de Google",
+      "entrada": [
+        "Un código que abre la ventana para escribir una reseña de tu negocio, con las estrellas ya listas. No la ficha, no el mapa: el formulario. Cada paso intermedio que eliminas multiplica las reseñas que realmente se publican.",
+        "Lo único que necesitas es el enlace corto que Google te da para pedir opiniones. Abajo está explicado dónde encontrarlo, porque es el punto en el que casi todo el mundo pega el enlace equivocado."
+      ],
+      "config": {
+        "tipo": "resenas",
+        "marco": true,
+        "cta": "DÉJANOS TU OPINIÓN",
+        "objeto3d": "placa-mesa"
+      },
+      "h2Blog": "El enlace correcto, y cuándo pedir la reseña",
+      "blog": [
+        "Hay tres enlaces que la gente confunde. El de tu ficha en el buscador, el de tu ubicación en Maps, y el que abre directamente el cuadro de reseña. Solo el tercero sirve para esto.",
+        "El correcto se obtiene desde tu perfil de empresa de Google: hay una opción para pedir reseñas que genera un enlace corto del tipo g.page/r/…, pensado exactamente para compartirlo. Ese es el que hay que meter aquí.",
+        "Si usas el enlace de la ficha, quien escanea aterriza en tu página de negocio y tiene que encontrar el botón de escribir una reseña por su cuenta. Parece un detalle menor; en la práctica se pierde la mitad de la gente en ese paso.",
+        "Con el enlace correcto, la secuencia es: escanear, ver las estrellas, elegir, escribir dos líneas, enviar. Quince segundos. Y si la persona ya está identificada en Google en su teléfono, que es lo normal, no hay ni que iniciar sesión.",
+        "El momento de pedirla decide más que el diseño del cartel. La reseña se pide cuando la persona acaba de tener la experiencia buena y todavía la tiene fresca: al terminar de comer, al recoger el trabajo terminado, al salir satisfecha. No por correo tres días después.",
+        "Por eso el mejor soporte no es un cartel en la pared, es algo que llegue a la mano de la persona en ese instante: la boleta, el portacuentas, la bolsa, la tarjeta que se entrega con el producto.",
+        "Un detalle importante y que Google sanciona: no se puede ofrecer nada a cambio de una reseña. Ni un descuento, ni un postre, ni un sorteo. Las políticas lo prohíben y hay negocios con reseñas eliminadas en bloque por eso.",
+        "Tampoco se puede filtrar. Poner un paso previo que pregunte si la experiencia fue buena y solo mande a Google a los contentos es una práctica llamada review gating y está expresamente prohibida. Además se detecta en el patrón de reseñas.",
+        "Lo que sí puedes hacer es pedirla bien. Un texto que diga qué te ayuda concretamente funciona mejor que un genérico: «Cuéntanos qué te pareció el corte» obtiene reseñas con contenido, y una reseña con detalles pesa más en las búsquedas locales que cinco que solo digan «bueno».",
+        "También puedes pedirla en persona y usar el código solo como atajo. La frase importa: «si te sirvió, una reseña nos ayuda mucho, es este código» tiene un efecto muy distinto al de un cartel silencioso.",
+        "Sobre el diseño: el marco con texto es casi obligatorio aquí. Un QR sin etiqueta junto a la caja se interpreta como un código de pago, y nadie lo escanea por curiosidad. «Déjanos tu opinión» aclara el destino en tres palabras.",
+        "Las estrellas dibujadas junto al código ayudan más de lo que parece: comunican la acción sin leer. Si tu identidad visual lo permite, un renglón de cinco estrellas y el código debajo es el cartel más eficaz que hay para esto.",
+        "Si tienes varios locales, cada uno necesita su propio código, porque cada uno tiene su propia ficha. Un solo código para toda la cadena concentra las reseñas en una sola ubicación y deja a las demás sin nada, que es justo lo contrario de lo que quieres para el posicionamiento local.",
+        "Para cadenas y franquicias, la herramienta de generación por lotes de este sitio resuelve el caso: una fila por local con su enlace, y salen todos los códigos de una vez, cada uno con su nombre de archivo.",
+        "Un último aviso práctico. Comprueba el código con un teléfono en el que no estés identificado con la cuenta del negocio. Si lo pruebas con tu propia cuenta de administrador, Google te muestra otra pantalla y no ves lo que ve tu cliente."
+      ],
+      "faq": [
+        [
+          "¿Dónde consigo el enlace para reseñas?",
+          "En tu perfil de empresa de Google, en la opción de pedir reseñas. Te da un enlace corto del tipo g.page/r/… que abre el cuadro de reseña directamente. No uses el enlace de tu ficha ni el de Maps."
+        ],
+        [
+          "¿Puedo ofrecer un descuento por dejar una reseña?",
+          "No. Las políticas de Google lo prohíben y hay negocios que han perdido todas sus reseñas por hacerlo. Puedes pedirla; no puedes pagarla."
+        ],
+        [
+          "¿Puedo mandar a Google solo a los clientes contentos?",
+          "Tampoco. Filtrar según la experiencia previa está expresamente prohibido, y el patrón resultante es detectable."
+        ],
+        [
+          "Tengo tres locales, ¿un código para todos?",
+          "No: cada local tiene su propia ficha y necesita su propio código. Si son muchos, usa la generación por lotes con una fila por local."
+        ],
+        [
+          "¿Hace falta que el cliente tenga cuenta de Google?",
+          "Sí, para publicar una reseña hace falta estar identificado. En la práctica casi todo el mundo lo está ya en su teléfono Android, y en iPhone basta con tener la aplicación de Google o Maps."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/qr-whatsapp/",
+          "QR de WhatsApp"
+        ],
+        [
+          "/qr-por-lotes/",
+          "Generar un código por local"
+        ],
+        [
+          "/",
+          "Generador de QR"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-tarjeta-de-contacto/",
+      "archivo": "qr-tarjeta-de-contacto/index.html",
+      "keyword": "QR de tarjeta de contacto vCard",
+      "metaTitulo": "QR de contacto (vCard): se guarda en la agenda de un toque",
+      "metaDescripcion": "Crea el código QR que guarda tu nombre, teléfono, correo y empresa directamente en la agenda del teléfono. Formato vCard estándar, sin apps ni suscripción.",
+      "h1": "Generador de QR de contacto para tarjetas",
+      "entrada": [
+        "Este código no lleva a ninguna página: guarda tus datos. Quien lo escanea ve la ficha de contacto y con un toque la tiene en su agenda, con tu nombre, tu teléfono, tu correo y tu cargo ya separados en sus campos.",
+        "Es el QR de una tarjeta de presentación bien hecha, y funciona sin conexión, porque los datos viajan dentro del propio código en lugar de estar alojados en algún servidor."
+      ],
+      "config": {
+        "tipo": "vcard",
+        "ecl": "Q",
+        "objeto3d": "tarjeta-visita"
+      },
+      "h2Blog": "Qué es una vCard y cuántos datos caben",
+      "blog": [
+        "vCard es un formato de ficha de contacto que existe desde los años noventa y que entienden Android, iOS, Outlook, Gmail y prácticamente cualquier agenda. El código QR simplemente contiene ese texto, con sus campos marcados.",
+        "La consecuencia práctica: no hace falta ninguna aplicación especial ni por tu parte ni por la de quien escanea. La cámara reconoce que es un contacto y ofrece guardarlo.",
+        "Y la otra consecuencia, más importante: no depende de nosotros ni de nadie. Los servicios de tarjeta digital por suscripción alojan tu ficha en su servidor y el QR apunta allí; si dejas de pagar o el servicio cierra, todas tus tarjetas impresas quedan muertas. Una vCard dentro del código no puede caducar.",
+        "El límite es la capacidad. Un código QR almacena una cantidad finita de caracteres, y cuanto más metes, más módulos necesita y más fino queda cada uno. Un código con demasiados datos impreso en pequeño deja de leerse.",
+        "El orden de prioridad que funciona: nombre, teléfono, correo, empresa y cargo. Con eso la ficha está completa para lo que sirve una tarjeta. La dirección postal completa, la web, el segundo teléfono y una nota de tres líneas son lo que empieza a inflar el código.",
+        "Si necesitas meterlo todo, hay dos salidas. Una, imprimir más grande. Dos, poner en el código solo lo esencial más tu web, y que en la web esté el resto.",
+        "Cuidado con los caracteres poco habituales. Las tildes y la eñe se codifican bien, pero ocupan más espacio que una letra normal y algunas agendas antiguas las muestran mal. Si tu código va a viajar internacionalmente, conviene revisar cómo queda el nombre.",
+        "El nivel de corrección de errores merece una mención. Un QR puede reconstruirse aunque una parte esté dañada, y hay cuatro niveles de esa tolerancia. Para una tarjeta que va a vivir en carteras y bolsillos, un nivel alto compensa el tamaño extra: el código sigue leyéndose con un doblez o un roce.",
+        "Sobre el diseño de la tarjeta: el código al dorso, no al frente. El frente es para tu nombre y lo que haces; el QR es la acción, y va donde la persona lo busca cuando ya decidió guardarte.",
+        "Deja respirar el código. El margen blanco alrededor es parte del estándar, y una tarjeta donde el QR llega hasta el filo del papel es una tarjeta cuyo código falla la mitad de las veces.",
+        "El tamaño mínimo razonable en una tarjeta de visita estándar es de unos dos centímetros de lado. Por debajo de eso, con una impresión doméstica, los módulos se juntan y la lectura se vuelve cuestión de suerte.",
+        "Una prueba que ahorra dinero: imprime una sola tarjeta en la impresora que vayas a usar, no en pantalla, y escanéala con dos teléfonos distintos. La impresión es donde se pierde la nitidez, y eso no se ve en el archivo.",
+        "Hay una variante que vale la pena considerar: la tarjeta 3D. El generador exporta tu código como una pieza imprimible en dos colores, del tamaño de una tarjeta de visita. Es un objeto que la gente no tira, y ese es el problema real de las tarjetas de papel.",
+        "Para un equipo, la generación por lotes resuelve el trabajo: una hoja de cálculo con una fila por persona y salen todos los códigos de golpe, cada uno con su nombre de archivo, listos para pasar a la imprenta.",
+        "Un detalle final de privacidad que conviene tener claro: los datos que escribes aquí no salen de tu navegador. El código se construye en tu propio equipo, así que puedes poner tu teléfono personal sin que pase por ningún servidor nuestro."
+      ],
+      "faq": [
+        [
+          "¿Necesita internet para funcionar?",
+          "No. Los datos están dentro del código, así que se lee y se guarda sin conexión. Es una de las ventajas sobre las tarjetas digitales que apuntan a una página web."
+        ],
+        [
+          "¿Qué pasa si cambio de teléfono o de empresa?",
+          "Los códigos ya impresos siguen llevando los datos antiguos. Si cambias a menudo, pon en el código solo lo estable más tu web, y mantén el resto actualizado en la web."
+        ],
+        [
+          "¿Cuántos datos puedo meter?",
+          "Técnicamente muchos, pero cada carácter agranda el código y afina los módulos. Con nombre, teléfono, correo, empresa y cargo el código sigue siendo cómodo de imprimir en pequeño."
+        ],
+        [
+          "¿Funciona en iPhone y en Android?",
+          "En los dos. vCard es un formato estándar y las cámaras de ambos sistemas reconocen que el código es un contacto y ofrecen guardarlo."
+        ],
+        [
+          "¿Qué tamaño mínimo le doy en una tarjeta?",
+          "Unos dos centímetros de lado con impresión de imprenta. Si imprimes en casa, dale algo más, porque la tinta se expande sobre el papel y los módulos se juntan."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/qr-3d/tarjeta/",
+          "Tarjeta de visita 3D con QR"
+        ],
+        [
+          "/qr-por-lotes/",
+          "Un código por persona del equipo"
+        ],
+        [
+          "/",
+          "Generador de QR"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-menu-restaurante/",
+      "archivo": "qr-menu-restaurante/index.html",
+      "keyword": "QR para carta de restaurante",
+      "metaTitulo": "QR para la carta de un restaurante: cómo hacerlo bien",
+      "metaDescripcion": "Crea el código QR de tu carta y evita los errores que hacen que el cliente se rinda: el PDF que no se lee en el móvil, el código en el mantel, el enlace que caduca.",
+      "h1": "Generador de QR para la carta de tu restaurante",
+      "entrada": [
+        "El código que lleva a tu carta. La parte fácil es generarlo; la difícil es que el cliente llegue a leerla sin frustrarse, y ahí se equivoca la mayoría de los restaurantes que pusieron un QR en la mesa.",
+        "Abajo está lo que de verdad decide si funciona: a qué debe apuntar el código, por qué un PDF es casi siempre una mala idea y dónde colocarlo en la mesa."
+      ],
+      "config": {
+        "tipo": "enlace",
+        "marco": true,
+        "cta": "NUESTRA CARTA",
+        "objeto3d": "placa-mesa"
+      },
+      "h2Blog": "El error del PDF, y otros cuatro que arruinan la carta digital",
+      "blog": [
+        "El primero y el más común: apuntar el código a un PDF. Un PDF está pensado para una hoja A4, y en un teléfono obliga a hacer zoom y a arrastrar la pantalla para leer cada línea. El cliente aguanta dos platos y luego pide lo de siempre.",
+        "Lo que funciona es una página web sencilla, con el texto que se ajusta al ancho de la pantalla. No hace falta nada sofisticado: títulos de sección, nombre del plato, descripción corta y precio. Sin imágenes pesadas.",
+        "El segundo error es el peso. Una carta con veinte fotos de platos a máxima resolución tarda en cargar, y en un restaurante lleno, con todo el mundo usando la misma red, tarda mucho más. Si pones fotos, que estén comprimidas.",
+        "El tercero es depender del WiFi del local. Si la carta solo carga con tu red y tu red va mal, no tienes carta. La página debe estar en internet, no en un servidor dentro del restaurante, y el código debe apuntar a esa dirección pública.",
+        "Y si vas a ofrecer tu WiFi de todos modos, el código de red es un cartel aparte, no el mismo. Mezclar los dos en un solo código no es posible, y poner los dos juntos sin etiquetar cada uno confunde a todo el mundo.",
+        "El cuarto error es el enlace frágil. Una carta subida a un servicio de almacenamiento en la nube con un enlace larguísimo se rompe el día que reorganizas tus archivos. Y todos los códigos impresos con él, también. Usa una dirección de tu propio dominio.",
+        "Esto es importante entenderlo bien: el código estático que sale de aquí no caduca nunca, pero apunta exactamente a la dirección que le pongas. Si esa dirección cambia, el código deja de servir. La solución no es pagar por un QR dinámico, es que la dirección sea tuya y estable.",
+        "El quinto error es de colocación. El código en el mantel de papel desaparece con el mantel. En la carta física, obliga a tener carta física. En el centro de la mesa, queda tapado por los platos justo cuando alguien quiere volver a mirar los postres.",
+        "El sitio que funciona es un soporte vertical, pequeño, en la esquina de la mesa: se ve al sentarse, sigue accesible durante toda la comida y no estorba al servicio. Un portacódigos de sobremesa o una placa apoyada.",
+        "Ese es el caso donde la exportación 3D de este generador tiene más sentido. Una placa de sobremesa impresa en dos colores, con tu código en relieve, no se moja con el vaso, no se dobla, no se la lleva el viento en la terraza y dura años.",
+        "El relieve además resuelve algo que el papel no: un código impreso en relieve sobre una base de otro color mantiene el contraste incluso con luz baja y de lado, que es la luz típica de un restaurante de noche.",
+        "Sobre la etiqueta del código: «Nuestra carta» debajo, siempre. La gente ha aprendido a desconfiar de los QR sin explicación, y en una mesa el mismo cuadrado podría ser la carta, el WiFi, la cuenta o una encuesta.",
+        "Piensa también en quien no quiere usar el teléfono. Una carta solo en QR excluye a quien tiene la batería a cero, a quien no ve bien la pantalla pequeña y a quien simplemente no quiere. Tener dos o tres cartas físicas disponibles no cuesta nada y evita una mala reseña.",
+        "Si tienes varios locales con cartas distintas, o carta de día y de noche, necesitas un código por cada una. La herramienta de generación por lotes lo hace de una vez: una fila por carta, con su dirección y su nombre de archivo.",
+        "Y antes de mandar a imprimir cincuenta soportes: escanea el código, abre la carta en un teléfono de gama baja con datos móviles en lugar de WiFi, y mira cuánto tarda. Esa es la experiencia real de tu cliente, no la de tu teléfono nuevo conectado a tu red."
+      ],
+      "faq": [
+        [
+          "¿Puedo apuntar el código a un PDF?",
+          "Puedes, pero es la razón principal de que las cartas con QR funcionen mal: un PDF obliga a hacer zoom en el móvil. Una página web sencilla que se adapte al ancho de la pantalla se lee sin esfuerzo."
+        ],
+        [
+          "¿El código caduca?",
+          "El código no. Lo que puede cambiar es la dirección a la que apunta. Por eso conviene que la carta esté en una dirección de tu propio dominio y que no la muevas."
+        ],
+        [
+          "¿Necesito pagar un servicio de carta digital?",
+          "No para el código. Necesitas una página donde esté tu carta; eso puede ser una página propia muy simple. El QR de aquí es gratis y no tiene suscripción."
+        ],
+        [
+          "¿Dónde pongo el código en la mesa?",
+          "En un soporte vertical en una esquina. En el mantel desaparece con el mantel, y en el centro lo tapan los platos justo cuando alguien quiere ver los postres."
+        ],
+        [
+          "¿Puedo juntar la carta y el WiFi en un solo código?",
+          "No: un código lleva un solo contenido. Son dos códigos, y cada uno tiene que estar etiquetado para que se distingan."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/qr-wifi/",
+          "QR para el WiFi del local"
+        ],
+        [
+          "/qr-3d/placa/",
+          "Placa 3D para la mesa"
+        ],
+        [
+          "/qr-resenas-google/",
+          "QR para reseñas de Google"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-instagram/",
+      "archivo": "qr-instagram/index.html",
+      "keyword": "QR de Instagram",
+      "metaTitulo": "QR de Instagram: crea el tuyo y elige bien a dónde lleva",
+      "metaDescripcion": "Genera el código QR de tu perfil de Instagram, TikTok, Facebook o YouTube. Con la diferencia entre el código de la app y uno propio, y cuál te conviene.",
+      "h1": "Generador de QR para Instagram y otras redes",
+      "entrada": [
+        "Escribe tu usuario y elige la red: el código abre tu perfil directamente en la aplicación si está instalada, y en el navegador si no lo está.",
+        "Instagram ya tiene su propio código dentro de la aplicación, así que la pregunta razonable es por qué generar otro. La respuesta tiene que ver con el control, y está explicada abajo."
+      ],
+      "config": {
+        "tipo": "red",
+        "marco": true,
+        "cta": "SÍGUENOS",
+        "objeto3d": "placa-mesa"
+      },
+      "h2Blog": "El código de la aplicación frente a uno propio",
+      "blog": [
+        "El código que Instagram genera en la aplicación funciona perfectamente y tiene una ventaja: al escanearlo desde otra cuenta de Instagram, abre el perfil dentro de la aplicación sin pasar por el navegador.",
+        "Tiene tres inconvenientes. El primero, que su aspecto lo decide Instagram: tamaño, colores y logo vienen impuestos, y si tu material impreso tiene una identidad visual propia, el código se pelea con ella.",
+        "El segundo, que solo sirve para Instagram. Si en el mismo cartel quieres el perfil, el WhatsApp y la carta, tendrás un código con un estilo y dos con otro. Generarlos todos con el mismo criterio hace que el material se lea como una sola pieza.",
+        "El tercero, y el que más importa a la larga: está atado a la plataforma. Un código propio que apunte a una página tuya te deja cambiar el destino sin reimprimir nada. Si mañana te mudas de red, cambias la página.",
+        "Ese es el patrón que conviene si vas a imprimir en cantidad: el QR apunta a una dirección de tu dominio, y esa dirección redirige a tu perfil actual. Los códigos impresos siguen valiendo cuando cambies de red o de usuario.",
+        "Si no tienes dominio propio, el código directo al perfil es perfectamente razonable. Solo hay que tener presente que un cambio de nombre de usuario deja inservible todo lo impreso, y los cambios de usuario son más frecuentes de lo que uno cree.",
+        "Sobre las redes: el generador construye la dirección correcta para Instagram, TikTok, Facebook, X, YouTube y LinkedIn. En todas, lo que hay que escribir es el usuario, sin la arroba y sin la dirección completa.",
+        "Un detalle técnico con consecuencias: estos códigos abren la aplicación mediante un enlace web normal, no mediante un esquema propio de la aplicación. Eso los hace más largos pero mucho más fiables, porque funcionan igual en un teléfono que no tenga la aplicación instalada.",
+        "El marco con etiqueta es especialmente útil aquí. «Síguenos» convierte un cuadrado ambiguo en una invitación clara, y en un cartel con varios códigos es lo único que evita que la gente escanee el que no quería.",
+        "Sobre el logo en el centro: el de la red es marca registrada de su dueño y usarlo en material propio tiene condiciones. El tuyo no tiene ese problema y además comunica de quién es el perfil, que es la información que falta cuando el cartel solo dice «síguenos».",
+        "Hay un límite físico al logo: tapa módulos, y el código solo tolera perder una parte antes de dejar de leerse. Este generador comprueba la lectura real después de poner el logo y avisa si se pasó de tamaño, en lugar de dejarte imprimir algo roto.",
+        "Un uso que funciona mejor de lo esperado: el código en el escaparate, a la altura de los ojos, con el perfil de la tienda. La gente que pasa y le gusta lo que ve, sigue. No hay que entrar ni preguntar nada.",
+        "En eventos y ferias, la variante útil es una placa rígida en el mostrador en lugar de un papel. El generador exporta el código como pieza 3D imprimible: aguanta el traslado, no se arruga en la mochila y se ve mejor que un adhesivo pegado apurado.",
+        "Y si gestionas varias cuentas o varios clientes, la generación por lotes saca todos los códigos de una hoja de cálculo, cada uno con su archivo nombrado, en una sola pasada.",
+        "Antes de imprimir: prueba el código con la aplicación cerrada y con la aplicación abierta, y en los dos sistemas. El comportamiento cambia según lo que haya instalado, y conviene saber qué ve cada persona."
+      ],
+      "faq": [
+        [
+          "¿Para qué generar uno si Instagram ya me da el suyo?",
+          "Por control del aspecto y del destino. El de Instagram tiene el diseño que decide Instagram, solo sirve para esa red, y apunta a tu usuario actual: si lo cambias, lo impreso deja de servir."
+        ],
+        [
+          "¿Abre la aplicación o el navegador?",
+          "Abre la aplicación si está instalada, y el navegador si no. Se usa un enlace web normal precisamente para que funcione en los dos casos."
+        ],
+        [
+          "¿Puedo poner el logo de Instagram en el centro?",
+          "Técnicamente sí, pero es una marca registrada y su uso en material propio tiene condiciones. Tu propio logo hace el mismo trabajo y además dice de quién es el perfil."
+        ],
+        [
+          "¿Qué redes admite?",
+          "Instagram, TikTok, Facebook, X, YouTube y LinkedIn. En todas se escribe el usuario, sin arroba y sin la dirección completa."
+        ],
+        [
+          "¿Qué pasa si cambio mi nombre de usuario?",
+          "El código apuntará a un perfil que ya no existe. Si prevés cambiarlo, apunta el código a una página tuya que redirija, y actualiza esa página."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/qr-whatsapp/",
+          "QR de WhatsApp"
+        ],
+        [
+          "/",
+          "Generador de QR"
+        ],
+        [
+          "/qr-3d/iman/",
+          "Imán 3D con tu código"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-ubicacion/",
+      "archivo": "qr-ubicacion/index.html",
+      "keyword": "QR de ubicación para Google Maps",
+      "metaTitulo": "QR de ubicación: que lleguen a tu dirección sin preguntar",
+      "metaDescripcion": "Crea el código QR que abre tu ubicación en el mapa del teléfono. Con coordenadas o con dirección, y por qué las coordenadas fallan menos de lo que crees.",
+      "h1": "Generador de QR de ubicación",
+      "entrada": [
+        "Un código que abre tu ubicación en el mapa del teléfono, listo para trazar la ruta. Útil en una invitación, en un cartel de obra, en la firma de un correo o en la puerta de un local difícil de encontrar.",
+        "Puedes ponerlo por coordenadas o por dirección escrita. No dan el mismo resultado, y la diferencia importa más en las zonas donde la numeración es irregular."
+      ],
+      "config": {
+        "tipo": "ubicacion",
+        "marco": true,
+        "cta": "CÓMO LLEGAR",
+        "objeto3d": "placa-mesa"
+      },
+      "h2Blog": "Coordenadas o dirección: cuál elegir",
+      "blog": [
+        "Con una dirección escrita, el mapa tiene que interpretarla. Normalmente acierta, pero en urbanizaciones nuevas, en calles con nombres repetidos o en zonas donde la numeración no es continua, deja a la persona a una cuadra o en el distrito equivocado.",
+        "Con coordenadas, el mapa va al punto exacto que le diste. No hay interpretación posible. Es la opción segura cuando el sitio es difícil de encontrar o cuando la entrada no está donde el mapa cree que está.",
+        "Conseguir tus coordenadas es sencillo: abre el mapa, mantén pulsado el punto exacto y aparecen dos números, la latitud y la longitud. Cópialos y pégalos aquí.",
+        "Ese gesto resuelve un problema muy común: la entrada real no coincide con el centro del edificio. Un almacén cuya puerta de carga está en la calle de atrás, un local dentro de una galería, una casa de campo a la que se llega por un desvío sin nombre.",
+        "Cuando pones coordenadas, conviene marcar el punto donde la persona tiene que detenerse, no el centro geométrico de la propiedad. Para un proveedor que llega en camión, la diferencia entre las dos cosas son veinte minutos de vueltas.",
+        "La dirección escrita tiene una ventaja que las coordenadas no: es legible para un humano. En un cartel, «Av. Larco 345» junto al código informa a quien no va a escanear. Lo mejor de los dos mundos es poner el código con coordenadas y el texto de la dirección al lado.",
+        "Este tipo de código usa un formato estándar llamado geo, que los dos sistemas entienden: en Android abre normalmente Google Maps y en iPhone, Apple Maps. Cada persona llega con la aplicación que ya usa, sin instalar nada.",
+        "Si te importa que todo el mundo abra Google Maps específicamente, hay otro camino: usar el tipo de código de enlace con la dirección web de tu ubicación en Maps. Es más largo y menos elegante, pero fuerza la aplicación.",
+        "Una aplicación que se olvida: la invitación. Un código en la tarjeta de una boda o un evento ahorra la conversación de «¿dónde queda?» repetida cuarenta veces, y evita que alguien llegue tarde por haber puesto mal el nombre del local.",
+        "Otra: la firma de correo de un negocio con atención presencial. Un código pequeño junto a la dirección convierte un dato que hay que copiar en un gesto de un segundo.",
+        "Y otra más, para quien tiene taller o depósito: el cartel en la puerta con la ubicación exacta de la entrada de carga. El repartidor que llega por primera vez y no encuentra la puerta es un problema que se resuelve con un código.",
+        "Sobre el soporte: si va a estar a la intemperie, el papel no aguanta. La lluvia, el sol y el viento acaban con un adhesivo en semanas. Este generador exporta el código como pieza 3D imprimible, y una placa de pared en dos colores resiste años a la intemperie.",
+        "El relieve además tiene una propiedad útil al aire libre: el contraste no depende de la tinta, sino de dos plásticos de colores distintos. No se descolora con el sol como un impreso.",
+        "Para carteles exteriores, calcula el tamaño por la distancia: el lado del código, aproximadamente la décima parte de la distancia desde la que se leerá. Un cartel en la fachada que se lee desde la acera de enfrente necesita ser bastante más grande de lo que la intuición sugiere.",
+        "Y la comprobación de siempre, que aquí tiene un paso extra: escanea el código y verifica que el punto que aparece en el mapa es el correcto, no solo que el código se lee. Un dígito mal copiado en la latitud te manda a otro distrito y el código funciona perfectamente."
+      ],
+      "faq": [
+        [
+          "¿Abre Google Maps o Apple Maps?",
+          "La que la persona use por defecto: el código usa el formato estándar geo, así que en Android suele abrir Google Maps y en iPhone, Apple Maps. Si quieres forzar Google Maps, usa el tipo enlace con la dirección web de tu ubicación."
+        ],
+        [
+          "¿Cómo obtengo mis coordenadas?",
+          "Abre el mapa en el teléfono, mantén pulsado el punto exacto y aparecerán la latitud y la longitud. Cópialas tal cual."
+        ],
+        [
+          "¿Es mejor la dirección o las coordenadas?",
+          "Las coordenadas, si el sitio es difícil de encontrar o si la entrada no coincide con lo que el mapa marca. La dirección escrita es más cómoda, pero el mapa tiene que interpretarla y a veces se equivoca."
+        ],
+        [
+          "¿Sirve para un cartel a la intemperie?",
+          "En papel, poco: el sol y la lluvia lo acaban en semanas. Exporta el código como pieza 3D y una placa de pared en dos colores durará años sin descolorarse."
+        ],
+        [
+          "¿Funciona sin conexión?",
+          "El código se lee sin conexión, pero para dibujar el mapa y trazar la ruta el teléfono necesita datos, salvo que tenga esa zona descargada."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/qr-menu-restaurante/",
+          "QR para la carta"
+        ],
+        [
+          "/qr-whatsapp/",
+          "QR de WhatsApp"
+        ],
+        [
+          "/",
+          "Generador de QR"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-3d/iman/",
+      "archivo": "qr-3d/iman/index.html",
+      "keyword": "imán de nevera con código QR para imprimir en 3D",
+      "metaTitulo": "Imán de nevera con QR para imprimir en 3D (3MF y STL)",
+      "metaDescripcion": "Genera un imán de nevera con tu código QR en relieve, listo para imprimir en dos colores. Con el hueco del imán ya calculado y la comprobación de que escanea.",
+      "h1": "Imán de nevera con código QR para imprimir en 3D",
+      "entrada": [
+        "Un imán con tu código en relieve, con el alojamiento del imán ya vaciado en la base para que quede a ras. Se descarga en 3MF con los dos colores asignados, o en STL si prefieres separar las piezas a mano.",
+        "El caso típico es el negocio que quiere quedarse en la cocina del cliente: el QR lleva al WhatsApp de pedidos o a la carta, y el imán se queda ahí durante años a la vista."
+      ],
+      "config": {
+        "tipo": "whatsapp",
+        "objeto3d": "iman-nevera",
+        "ecl": "H"
+      },
+      "h2Blog": "Cómo se imprime y qué imán le va",
+      "blog": [
+        "La pieza es una base rectangular con el código en relieve y, en el reverso, una cavidad circular para el imán. El generador calcula esa cavidad para los imanes de neodimio más comunes, con la holgura justa para que entre a presión sin partir la pared.",
+        "El imán se pega con una gota de adhesivo instantáneo al final de la impresión. Conviene ponerlo antes de que la pieza salga de la placa: es más fácil sujetarla plana.",
+        "Comprueba la polaridad antes de pegar. Un imán de neodimio pegado del revés no se nota hasta que la pieza no se queda en la puerta, y despegarlo sin romper la base es complicado.",
+        "El diámetro habitual es de diez a doce milímetros, y el grosor de dos o tres. Para una pieza de este tamaño, un solo imán en el centro basta. Dos imanes impiden que el imán gire, que es útil si la pieza no es cuadrada.",
+        "El relieve va en positivo: los módulos oscuros sobresalen y la base clara queda al fondo. Es el modo que lee mejor, porque la sombra del relieve refuerza el contraste entre los dos colores.",
+        "El cambio de filamento se hace a una altura concreta, y el generador te la dice: imprimes la base en el color claro, la impresora se detiene, cambias al oscuro y terminas los módulos. Con una impresora de un solo extrusor, esa pausa es todo lo que hace falta para una pieza de dos colores.",
+        "En el 3MF los dos colores ya vienen asignados como materiales distintos, así que si tu impresora tiene cambiador o varios extrusores, el laminador lo entiende sin que configures nada.",
+        "El punto crítico es el ancho de cada módulo. Si un módulo mide menos del doble del diámetro de la boquilla, la impresora no puede formarlo bien y el relieve queda irregular. El generador comprueba esto y te avisa antes de exportar.",
+        "Eso significa que un código con mucho contenido necesita una pieza más grande. Un QR de WhatsApp con un mensaje largo tiene muchos más módulos que uno con solo el número, y en el tamaño de un imán la diferencia decide si sale o no sale.",
+        "La altura del relieve también tiene mínimo: al menos tres capas. Con menos, la sombra es tan leve que la cámara no distingue los módulos y la pieza no escanea aunque los colores sean correctos.",
+        "El nivel alto de corrección de errores es la opción por defecto aquí, y por una razón: el relieve impreso nunca sale tan limpio como la tinta, y esa tolerancia extra es lo que hace que la pieza se lea a pesar de las imperfecciones.",
+        "Sobre los colores: negro sobre blanco es lo que más contraste da, y por tanto lo que más fácil se lee. Los combinados de color se ven mejor pero reducen el margen. Si eliges colores de marca, comprueba el contraste antes de imprimir: el generador lo mide.",
+        "El acabado de la superficie importa. Una placa lisa y brillante refleja la luz de la cocina y puede tapar parte del código. Si tu filamento es brillante, una capa superior con un patrón mate ayuda.",
+        "Y el paso que ahorra media hora de impresión: el botón de comprobar que escanea renderiza la pieza vista desde arriba, tal como la verá la cámara, y la decodifica. Si el resultado no devuelve tu contenido, el problema está en la geometría y todavía no has gastado filamento.",
+        "Si vas a imprimir muchos para repartir, imprime primero uno solo y pruébalo con dos teléfonos distintos y con luz de interior, que es peor que la del taller. Un lote de cincuenta imanes que no escanean es un lote de cincuenta piezas de plástico."
+      ],
+      "faq": [
+        [
+          "¿Qué imán necesito?",
+          "Uno de neodimio de diez a doce milímetros de diámetro y dos o tres de grosor. La cavidad está calculada para esas medidas, con holgura para entrar a presión."
+        ],
+        [
+          "¿Puedo imprimirlo con una impresora de un solo extrusor?",
+          "Sí. El generador te da la altura exacta a la que hay que pausar para cambiar de filamento. La base va en el color claro y los módulos en el oscuro."
+        ],
+        [
+          "¿Por qué el generador me pide agrandar la pieza?",
+          "Porque algún módulo quedaría más fino que el doble de tu boquilla y no se imprimiría bien. Agrandar la pieza o acortar el contenido del código resuelve las dos cosas."
+        ],
+        [
+          "¿Escanea de verdad una pieza impresa?",
+          "Sí, si el relieve tiene al menos tres capas y los dos colores contrastan. El botón de comprobación lo verifica sobre la geometría real antes de que imprimas."
+        ],
+        [
+          "¿Qué formato descargo?",
+          "3MF si tu laminador es Bambu Studio, PrusaSlicer u Orca: lleva los dos colores ya asignados. STL si prefieres montar las piezas a mano, y OpenSCAD si quieres cambiar las medidas."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/qr-3d/llavero/",
+          "Llavero 3D con QR"
+        ],
+        [
+          "/qr-3d/placa/",
+          "Placa de mesa 3D"
+        ],
+        [
+          "/qr-whatsapp/",
+          "QR de WhatsApp"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-3d/placa/",
+      "archivo": "qr-3d/placa/index.html",
+      "keyword": "placa de mesa con QR para imprimir en 3D",
+      "metaTitulo": "Placa de mesa con QR en 3D: para mostradores y restaurantes",
+      "metaDescripcion": "Genera una placa de sobremesa con tu código QR en relieve, lista para imprimir en dos colores. Aguanta el uso diario que el papel no aguanta.",
+      "h1": "Placa de mesa con código QR para imprimir en 3D",
+      "entrada": [
+        "Una placa apoyada, con tu código en relieve y una peana inclinada para que quede de frente a quien se sienta. Se descarga en 3MF con los dos colores asignados, en STL o en OpenSCAD paramétrico.",
+        "Es la respuesta al problema de los códigos de mesa en papel: se manchan, se doblan, se mojan con el vaso y hay que reponerlos cada pocas semanas. Una placa impresa dura años."
+      ],
+      "config": {
+        "tipo": "enlace",
+        "objeto3d": "placa-mesa",
+        "ecl": "H"
+      },
+      "h2Blog": "Por qué una placa impresa gana al papel plastificado",
+      "blog": [
+        "El papel plastificado es la solución habitual y tiene dos fallos conocidos. El primero: el plástico brillante refleja, y en una mesa con luz cenital el reflejo cae justo sobre el código. El segundo: se despega por las esquinas y entra humedad.",
+        "Una placa impresa en 3D no tiene ninguno de los dos problemas. El contraste no viene de la tinta sino de dos plásticos de colores distintos, así que no se descolora, y el relieve mantiene la lectura incluso con luz rasante.",
+        "La inclinación de la peana está pensada para la altura de alguien sentado. Un código plano sobre la mesa obliga a escanear en diagonal, y la lectura en ángulo es la menos tolerante a cualquier imperfección.",
+        "El relieve va en positivo: los módulos sobresalen sobre la base. Además del contraste de color, cada módulo proyecta una sombra mínima que refuerza su borde, y eso ayuda a la cámara en penumbra, que es la luz de un restaurante de noche.",
+        "El grosor de la base es de al menos 1,2 mm, por dos razones: rigidez, para que no se arquee con el calor de una taza al lado, y opacidad, para que el color de la base no deje traslucir el relieve.",
+        "El generador comprueba el ancho de cada módulo contra el diámetro de tu boquilla. La regla es que un módulo no puede ser más fino que el doble de la boquilla, porque por debajo de eso la impresora no forma una pared limpia y el relieve sale irregular.",
+        "Esto tiene una consecuencia directa: cuanto más largo el contenido del código, más módulos y más grande tiene que ser la placa. Una dirección web corta cabe holgada; una dirección con parámetros de seguimiento de treinta caracteres puede no caber.",
+        "Por eso conviene acortar la dirección antes de generar el código, y hacerlo en tu propio dominio en lugar de con un acortador externo. Un acortador ajeno mete un intermediario que puede desaparecer, y entonces todas las placas impresas dejan de funcionar.",
+        "El cambio de filamento se resuelve con una pausa. El generador te da la altura exacta en milímetros: se imprime la base en el color claro, la impresora se detiene ahí, se cambia al oscuro y se terminan los módulos. No hace falta una impresora multicolor.",
+        "Si la tienes, mejor: el 3MF lleva los dos colores asignados como materiales distintos y el laminador lo reconoce sin configuración manual.",
+        "Hay una opción de texto grabado en el reverso que vale la pena usar: el nombre del local y para qué es el código. Cuando tengas cinco placas iguales en una caja, esa marca es lo único que las distingue.",
+        "Sobre el modo pasante, que es una tercera posibilidad: los módulos atraviesan la placa de lado a lado y el código se lee por transparencia con la luz de atrás. Queda espectacular sobre una superficie clara y necesita más cuidado, porque hay que evitar que los trozos sueltos se caigan. El generador añade puentes automáticos para eso.",
+        "El color: negro sobre blanco es lo que más margen de lectura da. Si vas a usar los colores de tu marca, el generador mide el contraste y te avisa si queda por debajo de lo que una cámara necesita, en lugar de dejarte descubrirlo con la pieza ya impresa.",
+        "Y la comprobación que justifica todo lo anterior: el botón de verificar renderiza la pieza desde arriba, como la ve una cámara, y la decodifica. Si devuelve tu contenido, la geometría es correcta. Es la diferencia entre media hora de impresión bien invertida y media hora perdida.",
+        "Imprime una sola antes del lote, y pruébala en el sitio real, con la luz real y a la altura real. Una placa que escanea perfecto en el taller puede fallar en una mesa con una lámpara justo encima."
+      ],
+      "faq": [
+        [
+          "¿Por qué no un papel plastificado?",
+          "Porque refleja y se despega. El relieve impreso mantiene el contraste con luz rasante y el color no se descolora, porque no es tinta sino plástico."
+        ],
+        [
+          "¿Hace falta una impresora de varios colores?",
+          "No. El generador indica la altura exacta a la que pausar para cambiar de filamento: base en claro, módulos en oscuro. Si tienes multicolor, el 3MF ya trae los materiales asignados."
+        ],
+        [
+          "¿Qué pasa si mi dirección web es muy larga?",
+          "El código necesita más módulos y la placa tiene que ser más grande. Acorta la dirección, preferiblemente en tu propio dominio, no con un acortador ajeno que pueda desaparecer."
+        ],
+        [
+          "¿Qué es el modo pasante?",
+          "Los módulos atraviesan la pieza y el código se lee por transparencia con luz detrás. Queda muy bien y el generador añade puentes automáticos para que ningún trozo suelto se caiga."
+        ],
+        [
+          "¿Cómo sé que va a escanear antes de imprimir?",
+          "Con el botón de comprobación: renderiza la pieza vista desde arriba, igual que la cámara, y la decodifica. Si devuelve tu contenido, la geometría está bien."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/qr-3d/llavero/",
+          "Llavero 3D con QR"
+        ],
+        [
+          "/qr-3d/iman/",
+          "Imán de nevera 3D"
+        ],
+        [
+          "/qr-menu-restaurante/",
+          "QR para la carta"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-3d/tarjeta/",
+      "archivo": "qr-3d/tarjeta/index.html",
+      "keyword": "tarjeta de visita 3D con código QR",
+      "metaTitulo": "Tarjeta de visita 3D con QR: la que nadie tira",
+      "metaDescripcion": "Genera una tarjeta de visita del tamaño estándar con tu código QR en relieve, para imprimir en 3D a dos colores. Con tus datos dentro del código.",
+      "h1": "Tarjeta de visita 3D con código QR",
+      "entrada": [
+        "Una tarjeta del tamaño estándar, 85 por 55 milímetros, con tu código en relieve y tu nombre grabado. El código guarda tus datos de contacto, así que quien la recibe los tiene en su agenda con un toque.",
+        "El argumento a favor no es estético: una tarjeta de papel acaba en la basura el mismo día, y una pieza que se puede tocar se queda en el escritorio. Eso es toda la diferencia entre repartir tarjetas y que te llamen."
+      ],
+      "config": {
+        "tipo": "vcard",
+        "objeto3d": "tarjeta-visita",
+        "ecl": "H"
+      },
+      "h2Blog": "Cuántos datos caben en una tarjeta de este tamaño",
+      "blog": [
+        "Aquí hay una tensión que conviene entender antes de diseñar nada. Cuantos más datos metes en el código, más módulos necesita. Y cuantos más módulos, más fino cada uno. En una tarjeta de 85 milímetros, ese límite llega antes de lo que parece.",
+        "La regla física es que un módulo no puede ser más fino que el doble del diámetro de tu boquilla. Con una boquilla de 0,4 mm, el mínimo práctico ronda los 0,8 mm por módulo, y el generador lo comprueba y avisa.",
+        "En la práctica, eso significa que caben cómodamente nombre, teléfono, correo, empresa y cargo. La dirección postal completa, dos teléfonos, la web y una nota son lo que empieza a hacer imposible la pieza.",
+        "Si necesitas más, la salida es poner en el código lo esencial más tu web, y que el resto esté en la web. Una tarjeta no es un currículum.",
+        "El relieve positivo es lo que se usa: los módulos sobresalen sobre la base. Además del contraste de color, se nota con el dedo, y ese detalle táctil es buena parte del efecto que hace que la tarjeta no se tire.",
+        "El nivel alto de corrección de errores viene puesto por defecto, y es importante aquí más que en otras piezas. Una tarjeta vive en bolsillos y carteras, se roza y se ensucia, y esa tolerancia es lo que permite que siga leyéndose después de meses.",
+        "El grosor de la pieza es un compromiso. Demasiado fina se rompe en el bolsillo; demasiado gruesa deja de parecer una tarjeta y molesta en la cartera. Entre 1,5 y 2 milímetros es la zona razonable.",
+        "El grabado del nombre en la superficie libre resuelve algo que el código no puede: quién eres, legible sin teléfono. Una tarjeta que solo tiene un cuadrado y ningún texto obliga a escanear para saber de quién es, y no todo el mundo va a hacerlo en ese momento.",
+        "El cambio de filamento se hace con una pausa a una altura que el generador te indica: base en el color claro, código y texto en el oscuro. Con un solo extrusor es suficiente.",
+        "Sobre materiales: el PLA mate en dos colores da el mejor resultado de lectura, porque no refleja. El brillante se ve más caro y escanea peor, y en una tarjeta que se va a leer bajo cualquier luz eso pesa más que el aspecto.",
+        "Si quieres algo más resistente para repartir en ferias, el PETG aguanta mejor el calor de un bolsillo y el manoseo, a cambio de ser algo más difícil de imprimir limpio en los detalles finos del relieve.",
+        "El tiempo de impresión por unidad es de veinte a treinta minutos según la altura de capa. Es viable imprimir una plancha de seis u ocho de golpe, lo que hace que repartir en un evento sea razonable.",
+        "Para un equipo, la generación por lotes de este sitio hace el trabajo previo: una hoja de cálculo con una fila por persona, y salen todos los códigos con sus datos, cada uno en su archivo. Después se generan las piezas con cada uno.",
+        "Antes de imprimir la plancha entera: imprime una, escanéala con dos teléfonos distintos, y comprueba que la ficha de contacto que aparece tiene todos los campos en su sitio. Un correo mal copiado multiplicado por cincuenta piezas es un problema caro.",
+        "Y usa el botón de comprobación, que renderiza la pieza vista desde arriba y la decodifica. Con tantos módulos en tan poca superficie, es la pieza donde más fácil es pasarse del límite sin darse cuenta."
+      ],
+      "faq": [
+        [
+          "¿Caben todos mis datos?",
+          "Nombre, teléfono, correo, empresa y cargo, sí. La dirección postal completa más varias líneas extra suele pasarse del límite: el código necesitaría módulos más finos de lo que una boquilla de 0,4 mm puede imprimir."
+        ],
+        [
+          "¿De qué grosor la hago?",
+          "Entre 1,5 y 2 milímetros. Más fina se rompe en el bolsillo y más gruesa deja de comportarse como una tarjeta."
+        ],
+        [
+          "¿Qué material va mejor?",
+          "PLA mate en dos colores para la mejor lectura, porque no refleja. PETG si va a pasar mucho tiempo en bolsillos, a cambio de algo más de dificultad en los detalles finos."
+        ],
+        [
+          "¿Cuánto tarda en imprimirse?",
+          "Entre veinte y treinta minutos por unidad según la altura de capa. Se pueden imprimir seis u ocho en una misma plancha."
+        ],
+        [
+          "¿Los datos que escribo salen de mi navegador?",
+          "No. El código se construye en tu propio equipo, así que puedes poner tu teléfono personal sin que pase por ningún servidor."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/qr-tarjeta-de-contacto/",
+          "QR de contacto en papel"
+        ],
+        [
+          "/qr-3d/llavero/",
+          "Llavero 3D con QR"
+        ],
+        [
+          "/qr-por-lotes/",
+          "Un código por persona"
+        ]
+      ]
+    }
+  ],
+  "herramientas": [
+    {
+      "ruta": "/leer-qr/",
+      "archivo": "leer-qr/index.html",
+      "modulo": "/js/lector.js",
+      "keyword": "leer un QR desde una imagen",
+      "metaTitulo": "Leer un código QR desde una imagen o con la cámara",
+      "metaDescripcion": "Sube una captura, pega una imagen o usa la cámara y te decimos qué contiene el código QR. Gratis, sin registro y sin subir nada a ningún servidor.",
+      "h1": "Leer un código QR",
+      "entrada": [
+        "Sube una imagen, pégala con Ctrl+V o apunta con la cámara: te decimos qué hay dentro del código y te avisamos si el enlace tiene mala pinta.",
+        "La imagen se procesa en tu navegador. No se sube a ningún servidor."
+      ],
+      "h2Blog": "Por qué conviene leer un QR antes de abrirlo",
+      "blog": [
+        "Un código QR es texto disfrazado de dibujo. No puedes saber a dónde te lleva hasta que lo escaneas, y ese es justo el hueco que aprovecha el fraude.",
+        "La estafa es sencilla: alguien pega una pegatina con su propio código encima del legítimo. El parquímetro, el cartel del restaurante, la factura de la luz. Tú apuntas, pagas, y el dinero va a otro sitio.",
+        "Leer el código aquí antes de abrirlo te enseña la dirección real, entera, sin abreviar. Es un paso de dos segundos que te ahorra el disgusto.",
+        "También sirve para lo aburrido y cotidiano: recuperar la contraseña del WiFi de un cartel que ya no tienes delante, sacar los datos de una tarjeta de visita, o ver qué guardaba un código que generaste hace meses.",
+        "Puedes darle la imagen de cuatro formas. Arrastrándola, pulsando para subirla, pegándola con Ctrl+V si acabas de hacer una captura, o usando la cámara.",
+        "Pegar la captura es lo más rápido en un ordenador. Windows guarda en el portapapeles lo que recortes con Win+Mayús+S; en Mac es Cmd+Mayús+4 manteniendo Control.",
+        "Si lo que tienes es un papel delante, usa la cámara: se lee sola en cuanto el código entra en el encuadre, no hay que pulsar ningún botón.",
+        "El permiso de cámara lo pide el navegador y puedes denegarlo sin perder nada: la opción de subir la foto hace exactamente lo mismo.",
+        "Cuando el código se lee, no te soltamos el texto crudo y ya está. Identificamos qué era y te lo mostramos ordenado: una red WiFi con su nombre y su contraseña, una ficha de contacto con sus campos, un evento con su fecha.",
+        "Debajo siempre puedes desplegar el contenido exacto, carácter por carácter, que es lo que necesitas si el código estaba mal formado y quieres entender por qué.",
+        "Los avisos de seguridad miran cuatro cosas. Si el enlace es de un acortador, porque entonces el destino real sigue oculto. Si el dominio usa caracteres no latinos codificados, la técnica clásica para imitar el nombre de un sitio conocido.",
+        "También si la dirección lleva usuario y contraseña incrustados antes del dominio, que es la forma más vieja de disfrazar a dónde va de verdad, y si la conexión no va cifrada.",
+        "Ninguno de esos avisos significa por sí solo que el código sea malicioso. Significan que mires dos veces antes de escribir una contraseña o un número de tarjeta.",
+        "La regla práctica que funciona: desconfía de cualquier QR que te pida pagar, iniciar sesión o instalar algo, sobre todo si estaba pegado en la calle o te llegó por mensaje.",
+        "Si el código es tuyo y quieres cambiarlo, el botón de editar lo abre en el generador con todos los datos ya puestos. Cambias lo que quieras y descargas el nuevo.",
+        "Eso también resuelve el caso de la pegatina que se ha despegado: lees el código viejo, lo editas si hace falta y lo imprimes otra vez, esta vez en 3D para que dure.",
+        "Si una imagen no se lee, casi siempre es por lo mismo: el código sale cortado, la foto está movida, o se hizo muy de lado. Vuelve a hacerla de frente y con el código entero dentro.",
+        "Los códigos impresos en superficies curvas o brillantes también dan guerra. Si puedes, apaga el flash y busca luz indirecta.",
+        "Nada de lo que subas sale de tu dispositivo: el decodificador es JavaScript que corre en tu navegador. Puedes desconectar internet después de cargar la página y seguirá leyendo códigos.",
+        "Y como no hay servidor, tampoco hay historial nuestro de lo que has leído."
+      ],
+      "faq": [
+        [
+          "¿Se sube mi imagen a algún sitio?",
+          "No. La decodificación ocurre en tu navegador con JavaScript. Ni la imagen ni el contenido leído se envían a ningún servidor."
+        ],
+        [
+          "¿Funciona con una foto hecha con el móvil?",
+          "Sí, siempre que el código salga entero, enfocado y razonablemente de frente. Si no se lee, repite la foto más cerca y con mejor luz."
+        ],
+        [
+          "¿Puedo leer un QR de WiFi y ver la contraseña?",
+          "Sí. El código de WiFi guarda la contraseña en texto plano, así que al leerlo se ve. Eso es exactamente por lo que no conviene pegar el QR de tu red principal a la vista de todos."
+        ],
+        [
+          "¿Es seguro abrir el enlace que sale?",
+          "El lector te enseña la dirección real antes de abrirla y te avisa de los patrones sospechosos habituales. La decisión sigue siendo tuya: desconfía de los códigos que piden pagar o iniciar sesión."
+        ],
+        [
+          "¿Por qué me pide permiso de cámara?",
+          "Solo si pulsas el botón de cámara. El navegador exige tu permiso explícito y puedes denegarlo: subir una foto hace lo mismo."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/",
+          "Generador de QR"
+        ],
+        [
+          "/qr-por-lotes/",
+          "Generar muchos a la vez"
+        ]
+      ]
+    },
+    {
+      "ruta": "/qr-por-lotes/",
+      "archivo": "qr-por-lotes/index.html",
+      "modulo": "/js/lotes.js",
+      "keyword": "generar muchos códigos QR a la vez",
+      "metaTitulo": "Generar muchos códigos QR a la vez desde un CSV",
+      "metaDescripcion": "Sube una lista y descarga un ZIP con todos los códigos en PNG y SVG, más las hojas A4 con marcas de corte. Hasta 500 de una tirada, gratis y sin registro.",
+      "h1": "Generar muchos códigos QR a la vez",
+      "entrada": [
+        "Pega tu lista o sube un CSV y descarga un ZIP con todos los códigos generados, numerados y listos para imprimir, con sus hojas A4 y marcas de corte.",
+        "Hasta 500 códigos por tanda, todo en tu navegador."
+      ],
+      "h2Blog": "Cómo preparar la lista para que salga a la primera",
+      "blog": [
+        "Si necesitas cuarenta códigos iguales salvo por un número, hacerlos de uno en uno es una tarde perdida. Esta herramienta convierte una lista en un ZIP con todo dentro.",
+        "El formato es un CSV, que es lo que exporta cualquier hoja de cálculo. Dos columnas bastan: contenido y etiqueta.",
+        "En contenido va lo que abrirá el código: un enlace, un texto, un identificador de inventario. En etiqueta va el nombre que quieres ver debajo del código en la hoja impresa, y que se usa además para nombrar el archivo.",
+        "Si exportas desde Excel en español, el separador será punto y coma en vez de coma. No pasa nada: se detecta solo, igual que el tabulador si pegas directamente desde una hoja de cálculo.",
+        "También puedes pegar las filas a mano en el recuadro. Y si no pones cabecera, se toma la primera columna como contenido y te avisamos.",
+        "El caso típico son las mesas de un local. Una fila por mesa, con el enlace de la carta y el número de mesa como etiqueta, y ya tienes los códigos numerados sin repetir trabajo.",
+        "El segundo caso es el inventario. Un código por activo con su identificador dentro, pegado en la máquina, y quien lo escanee ve la ficha del equipo.",
+        "El tercero son las acreditaciones de un evento: una fila por asistente, con su enlace personal.",
+        "Lo que descargas es un ZIP ordenado en carpetas: los PNG por un lado, los SVG por otro y las hojas A4 en la suya.",
+        "Los archivos van numerados con ceros a la izquierda para que el orden en el explorador sea el de tu lista y no el alfabético. Eso importa cuando tienes más de nueve.",
+        "Elige SVG si vas a llevarlo a imprenta o a rotular: es vectorial y se amplía a cualquier tamaño sin perder nitidez. El PNG sirve para pantalla y para impresión doméstica.",
+        "Las hojas A4 llevan medidas reales en milímetros y marcas de corte en las esquinas de cada celda. Imprímelas al 100%, sin la opción de ajustar a la página, o las medidas dejarán de cuadrar.",
+        "Puedes poner 1, 2, 4, 6, 12 o 24 códigos por hoja. Para mesas de restaurante, seis por hoja da un tamaño cómodo; 24 es para etiquetas pequeñas de inventario.",
+        "Si tu lista tiene más códigos de los que caben en una hoja, se generan las hojas que hagan falta y todas van dentro del ZIP.",
+        "El nivel de corrección de errores viene en Q porque estos códigos casi siempre acaban impresos y pegados en sitios que se rozan y se manchan. Con Q el código sigue leyéndose con una esquina estropeada.",
+        "Si alguna fila trae un contenido demasiado largo para caber en un código, esa fila se salta y aparece en un archivo de errores dentro del ZIP, con el número de fila y el motivo. El resto se genera igual.",
+        "El límite son 500 filas por tanda. No es una limitación técnica arbitraria: con más, el navegador empieza a sufrir y el ZIP se vuelve incómodo de manejar. Parte la lista si necesitas más.",
+        "Todo el trabajo ocurre en tu navegador. Con 500 filas puede tardar medio minuto, y la barra de progreso avanza de verdad: si se para, es que algo falló, no que se haya colgado.",
+        "Nada de lo que pegues se envía a ningún servidor, lo cual importa cuando la lista lleva nombres de clientes o identificadores internos.",
+        "Antes de mandar la tanda entera a imprenta, imprime una hoja en casa al tamaño real y escanea dos o tres códigos con un teléfono cualquiera."
+      ],
+      "faq": [
+        [
+          "¿Cuántos códigos puedo generar de una vez?",
+          "Hasta 500 por tanda. Si necesitas más, parte la lista en varios archivos."
+        ],
+        [
+          "¿Qué formato tiene que tener el CSV?",
+          "Una columna llamada contenido y, opcionalmente, otra llamada etiqueta. El separador puede ser coma, punto y coma o tabulador: se detecta solo. Puedes descargar la plantilla desde la propia página."
+        ],
+        [
+          "¿Puedo usar un color o un estilo distinto en cada código?",
+          "Sí. Añade columnas color y estilo a tu CSV y cada fila usará las suyas; las que estén vacías toman los valores generales."
+        ],
+        [
+          "¿Las hojas A4 salen a tamaño real?",
+          "Sí, llevan medidas en milímetros. Imprímelas al 100% y desactiva la opción de ajustar a la página del diálogo de impresión."
+        ],
+        [
+          "¿Se sube mi lista a algún servidor?",
+          "No. Los códigos y el ZIP se generan íntegramente en tu navegador."
+        ]
+      ],
+      "relacionados": [
+        [
+          "/",
+          "Generador de QR"
+        ],
+        [
+          "/leer-qr/",
+          "Leer un QR"
+        ]
+      ]
+    },
+    {
+      "ruta": "/mis-qr/",
+      "archivo": "mis-qr/index.html",
+      "modulo": "/js/mis-qr.js",
+      "keyword": "",
+      "indexar": false,
+      "metaTitulo": "Mis códigos QR guardados",
+      "metaDescripcion": "Los últimos códigos que has generado en este navegador, listos para volver a editarlos.",
+      "h1": "Mis códigos",
+      "entrada": [
+        "Los últimos códigos que has descargado desde este navegador. Puedes volver a editarlos sin empezar de cero.",
+        "Se guardan solo en tu dispositivo: si limpias los datos del sitio o cambias de equipo, esta lista se vacía."
+      ],
+      "h2Blog": "",
+      "blog": [],
+      "faq": [],
+      "relacionados": [
+        [
+          "/",
+          "Generador de QR"
+        ],
+        [
+          "/leer-qr/",
+          "Leer un QR"
+        ],
+        [
+          "/qr-por-lotes/",
+          "Generar por lotes"
+        ]
+      ]
+    }
+  ],
+  "legales": [
+    {
+      "ruta": "/legal/aviso-legal/",
+      "archivo": "legal/aviso-legal/index.html",
+      "titulo": "Aviso legal"
+    },
+    {
+      "ruta": "/legal/privacidad/",
+      "archivo": "legal/privacidad/index.html",
+      "titulo": "Política de privacidad"
+    },
+    {
+      "ruta": "/legal/cookies/",
+      "archivo": "legal/cookies/index.html",
+      "titulo": "Política de cookies"
+    }
+  ]
+}
