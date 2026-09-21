@@ -22,6 +22,11 @@ const leerConfig = (clave) => (configJs.match(new RegExp(`${clave}:\\s*'([^']*)'
 const DOMINIO = leerConfig('dominio').replace(/\/$/, '');
 const MARCA = leerConfig('marca') || datos.sitio.autor;
 
+/* El sitio raiz del portafolio. Esta herramienta es una de varias, y desde
+   aqui se tiene que poder volver al indice: la marca de la cabecera lleva
+   alli y el nombre de la app lleva a la portada de esta herramienta. */
+const HUB = 'https://microtools.lat/';
+
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const abs = (ruta) => (DOMINIO ? DOMINIO + ruta : ruta);
 
@@ -77,7 +82,11 @@ const NAV = [
 
 function cabecera(rutaActual) {
   return `<header class="cabecera"><div class="contenedor cabecera__fila">
-  <a class="logo" href="/" data-pista="Volver al generador. Todas estas herramientas son parte de microtools, un conjunto de utilidades que funcionan sin registro."><span data-marca>${esc(MARCA)}</span><span class="logo__sep" aria-hidden="true">/</span><span class="logo__app">QR</span></a>
+  <div class="logo">
+    <a class="logo__marca" href="${HUB}" data-pista="Ir a microtools, el sitio donde están todas las herramientas."><span data-marca>${esc(MARCA)}</span></a>
+    <span class="logo__sep" aria-hidden="true">/</span>
+    <a class="logo__app" href="/" data-pista="Volver a la portada del generador de códigos QR.">QR</a>
+  </div>
   <nav class="nav" aria-label="Principal">
     ${NAV.map(([r, t, ayuda]) => `<a href="${r}"${r === rutaActual ? ' aria-current="page"' : ''} data-pista="${esc(ayuda)}">${esc(t)}</a>`).join('\n    ')}
   </nav>
@@ -121,7 +130,7 @@ function accesos(rutaActual) {
 function pie() {
   return `<footer class="pie"><div class="contenedor">
   <div class="pie__enlaces">
-    <a href="https://microtools.lat/" rel="noopener">Más herramientas</a>
+    <a href="${HUB}" rel="noopener">Más herramientas</a>
     <a href="/mis-qr/">Mis códigos</a>
     ${datos.legales.map((l) => `<a href="${l.ruta}">${esc(l.titulo)}</a>`).join('\n    ')}
   </div>
@@ -479,7 +488,6 @@ function paginaLegal(l) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(l.titulo)} — ${esc(MARCA)}</title>
 <meta name="description" content="${esc(l.titulo)} de ${esc(MARCA)}.">
-<meta name="robots" content="noindex, follow">
 ${DOMINIO ? `<link rel="canonical" href="${abs(l.ruta)}">` : ''}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/css/app.css">
@@ -507,12 +515,21 @@ ${pie()}
 function sitemap() {
   const hoy = new Date().toISOString().slice(0, 10);
   const paginas = [...datos.landings, ...datos.herramientas.filter((h) => h.indexar !== false)];
-  const urls = paginas.map((l) => `  <url>
-    <loc>${abs(l.ruta)}</loc>
+  const entrada = (ruta, prioridad, frecuencia) => `  <url>
+    <loc>${abs(ruta)}</loc>
     <lastmod>${hoy}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>${l.ruta === '/' ? '1.0' : '0.8'}</priority>
-  </url>`).join('\n');
+    <changefreq>${frecuencia}</changefreq>
+    <priority>${prioridad}</priority>
+  </url>`;
+
+  // Las legales entran en el sitemap aunque nadie las busque. Quien revisa el
+  // sitio —AdSense sobre todo— espera encontrar la politica de privacidad
+  // indexada, no solo enlazada en el pie. Prioridad baja y cambio anual, que
+  // es lo que de verdad son.
+  const urls = [
+    ...paginas.map((l) => entrada(l.ruta, l.ruta === '/' ? '1.0' : '0.8', 'monthly')),
+    ...datos.legales.map((l) => entrada(l.ruta, '0.3', 'yearly')),
+  ].join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">
 ${urls}

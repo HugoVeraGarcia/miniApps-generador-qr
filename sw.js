@@ -1,6 +1,6 @@
 /* sw.js — generado por build/generar.mjs. La herramienta funciona sin
    conexión; los anuncios, no. */
-const CACHE = 'qr3d-e75788a82a';
+const CACHE = 'qr3d-7845a91031';
 const PRECACHE = [
   "/",
   "/css/app.css",
