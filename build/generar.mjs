@@ -21,6 +21,7 @@ const configJs = readFileSync(join(RAIZ, 'js', 'config.js'), 'utf8');
 const leerConfig = (clave) => (configJs.match(new RegExp(`${clave}:\\s*'([^']*)'`)) || [])[1] || '';
 const DOMINIO = leerConfig('dominio').replace(/\/$/, '');
 const MARCA = leerConfig('marca') || datos.sitio.autor;
+const CLIENTE = leerConfig('cliente');
 
 /* El sitio raiz del portafolio. Esta herramienta es una de varias, y desde
    aqui se tiene que poder volver al indice: la marca de la cabecera lleva
@@ -54,6 +55,17 @@ const ICONO_CANDADO = '<svg width="16" height="16" viewBox="0 0 16 16" fill="non
   + ' stroke-linejoin="round" aria-hidden="true" focusable="false">'
   + '<rect x="3" y="7" width="10" height="6.6" rx="1.4"/>'
   + '<path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></svg>';
+
+/* El ID de editor de AdSense va en el HTML generado, NO inyectado por
+   JavaScript. El robot que verifica el sitio lee el HTML tal como llega del
+   servidor: un script añadido en el evento load no lo ve, y la verificación
+   falla aunque los anuncios funcionen. La meta es el método de verificación
+   que documenta Google; el script es la carga real. */
+function etiquetasAdSense() {
+  if (!CLIENTE) return '';
+  return `<meta name="google-adsense-account" content="${CLIENTE}">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${CLIENTE}" crossorigin="anonymous"></script>`;
+}
 
 /* ---------- piezas comunes ---------- */
 
@@ -240,6 +252,7 @@ ${DOMINIO && indexable ? `<meta property="og:url" content="${abs(h.ruta)}">` : '
 <meta name="theme-color" content="#FFFFFF">
 <link rel="stylesheet" href="/css/app.css">
 ${indexable ? datosEstructurados(h) : ''}
+${etiquetasAdSense()}
 </head>
 <body>
 ${cabecera(h.ruta)}
@@ -382,6 +395,7 @@ ${DOMINIO ? `<meta property="og:url" content="${abs(l.ruta)}">` : ''}
 <meta name="theme-color" content="#FFFFFF">
 <link rel="stylesheet" href="/css/app.css">
 ${datosEstructurados(l)}
+${etiquetasAdSense()}
 </head>
 <body>
 ${cabecera(l.ruta)}
@@ -491,6 +505,7 @@ function paginaLegal(l) {
 ${DOMINIO ? `<link rel="canonical" href="${abs(l.ruta)}">` : ''}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/css/app.css">
+${etiquetasAdSense()}
 </head>
 <body>
 ${cabecera(l.ruta)}
